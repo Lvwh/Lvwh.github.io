@@ -1093,6 +1093,7 @@ pre .javascript .function {
 }
 .headband {
   height: 3px;
+  background: #222;
 }
 .site-meta {
   margin: 0;
@@ -1832,7 +1833,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #2a909c;
+  background: #fff;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -2748,13 +2749,13 @@ pre .javascript .function {
   padding-right: 260px;
 }
 header {
-  width: 88% !important;
+  width: 80% !important;
 }
 header.post-header {
   width: auto !important;
 }
 .container .main-inner {
-  width: 88%;
+  width: 80%;
 }
 .content-wrap {
   width: calc(100% - 260px);
