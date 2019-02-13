@@ -1833,7 +1833,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #ffff8b;
+  background: #82ffff;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -2795,7 +2795,7 @@ header.post-header {
 }
 .site-meta {
   padding: 20px 0;
-  color: #fff;
+  color: #000;
   background: #222;
 }
 @media (min-width: 768px) and (max-width: 991px) {
@@ -2809,11 +2809,11 @@ header.post-header {
   }
 }
 .brand {
-  padding: 0;
-  background: none;
+  padding: none;
+  background: black-deep;
 }
 .brand:hover {
-  color: #fff;
+  color: #000;
 }
 .site-subtitle {
   margin: 10px 10px 0;
@@ -2840,7 +2840,7 @@ header.post-header {
   margin: 0;
 }
 .menu .menu-item a {
-  position: relative;
+  position: inherit;
   box-sizing: border-box;
   padding: 5px 20px;
   text-align: left;
@@ -2852,7 +2852,7 @@ header.post-header {
 }
 .menu .menu-item a:hover,
 .menu-item-active a {
-  background: #f9f9f9;
+  background: #ececec;
   border-bottom-color: #fff;
 }
 .menu .menu-item br {
@@ -2864,8 +2864,8 @@ header.post-header {
   top: 50%;
   margin-top: -3px;
   right: 15px;
-  width: 6px;
-  height: 6px;
+  width: 8px;
+  height: 8px;
   border-radius: 50%;
   background-color: #bbb;
 }
