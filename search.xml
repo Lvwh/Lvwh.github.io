@@ -8,9 +8,9 @@
   <entry>
     <title><![CDATA[MySQL]]></title>
     <url>%2F2018%2F09%2F16%2FMySQL%2F</url>
-    <content type="text"><![CDATA[缘起：室友大二下成功申请转专业到信科，这学期上党德鹏老师的数据库系统原理课，他听网课的时候我偶尔也过去凑热闹。无奈党老师用的PostgreSQL只兼容Windows系统(Mac党摊手)]]></content>
+    <content type="text"><![CDATA[缘起：YYH大二下成功申请转专业到信科，这学期上数据库系统原理课并把这门课的MOOC推荐给我。无奈党德鹏老师用的PostgreSQL只兼容Windows系统(Mac党摊手)。一番搜索后，找到了对Linux系统友好的MySQL，开始了自己瞎折腾。先更基本语句，函数、备份…有时间更。 安装官网链接https://dev.mysql.com/downloads/mysql/-&gt; dmg文件安装 -&gt; 系统偏好设置Start/Stop 登录&amp;登出mysql -h 主机名 -u 用户名 -p -h: 登录自己电脑时可以省略 -p: 对于没有加密的用户可以省略 mysql -u root -pquit/exit 创建创建库create database DB_NAME查看已有数据库show databases 登录指定数据库use DB_NAME创建表create table TA_NAME(对列的声明)对主键的声明id int unsigned not null auto_increment primary key id：该列名称 int：整数型 unsigned：无符号型 auto_increment：插入数据时若该列为null，将自动产生一个比现存值更大的唯一标识符值 primary key：表明该列为主键 操作插入insert into TA_NAME (列1，列2) values (值1，值2) 查询select 列名 from TA_NAME where 条件 列名改为 * 表示查询整表 更新update TA_NAME set 更新的内容 where 条件 删除内容删除 delete from TA_NAME where 条件表删除 drop table TA_NAME数据库删除drop database DB_NAME 修改alter table TA_NAME 操作操作包括： 添加列 add 列名 数据类型 位置 修改列 change 列名 列新名字 数据类型 删除列 drop 列名 重命名表rename 新TA_NAME]]></content>
       <tags>
-        <tag>MySQL</tag>
+        <tag>MySQL基本语句</tag>
       </tags>
   </entry>
   <entry>
