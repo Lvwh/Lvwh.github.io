@@ -15,18 +15,15 @@
 
 
 
-<meta name="description" content="缘起：YYH大二下成功申请转专业到信科，这学期上数据库系统原理课并把这门课的MOOC推荐给我。无奈党德鹏老师用的PostgreSQL只兼容Windows系统(Mac党摊手)。一番搜索后，找到了对Linux系统友好的MySQL，开始了自己瞎折腾。先更基本语句，函数、备份…有时间更。">
-<meta name="keywords" content="MySQL基本语句">
+<meta name="keywords" content="SQL">
 <meta property="og:type" content="article">
-<meta property="og:title" content="MySQL">
+<meta property="og:title" content="SQL">
 <meta property="og:url" content="http://yoursite.com/2018/09/16/MySQL/index.html">
 <meta property="og:site_name" content="吕文昊的博客">
-<meta property="og:description" content="缘起：YYH大二下成功申请转专业到信科，这学期上数据库系统原理课并把这门课的MOOC推荐给我。无奈党德鹏老师用的PostgreSQL只兼容Windows系统(Mac党摊手)。一番搜索后，找到了对Linux系统友好的MySQL，开始了自己瞎折腾。先更基本语句，函数、备份…有时间更。">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-04-22T03:55:34.000Z">
+<meta property="og:updated_time" content="2019-07-28T01:26:48.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="MySQL">
-<meta name="twitter:description" content="缘起：YYH大二下成功申请转专业到信科，这学期上数据库系统原理课并把这门课的MOOC推荐给我。无奈党德鹏老师用的PostgreSQL只兼容Windows系统(Mac党摊手)。一番搜索后，找到了对Linux系统友好的MySQL，开始了自己瞎折腾。先更基本语句，函数、备份…有时间更。">
+<meta name="twitter:title" content="SQL">
 
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 
@@ -58,7 +55,7 @@
 <link href="//cdn.bootcss.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
 
 
-<title>MySQL | 吕文昊的博客</title>
+<title>SQL | 吕文昊的博客</title>
 
 <script src="//cdn.bootcss.com/jquery/2.2.4/jquery.min.js"></script>
 <script src="//cdn.bootcss.com/clipboard.js/1.5.10/clipboard.min.js"></script>
@@ -172,7 +169,7 @@
                 
                 <section class="switch-part switch-part2">
                     <div class="widget tagcloud" id="js-tagcloud">
-                        <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/Hexo/">Hexo</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/MySQL基本语句/">MySQL基本语句</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/单词/">单词</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/支教/">支教</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/随笔/">随笔</a></li></ul>
+                        <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/Hexo/">Hexo</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/SQL/">SQL</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/支教/">支教</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/随笔/">随笔</a></li></ul>
                     </div>
                 </section>
                 
@@ -242,7 +239,7 @@
         
   
     <h1 class="article-title" itemprop="name">
-      MySQL
+      SQL
     </h1>
   
 
@@ -253,7 +250,7 @@
 
         
     <div class="article-tag tagcloud">
-        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/MySQL基本语句/">MySQL基本语句</a></li></ul>
+        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/SQL/">SQL</a></li></ul>
     </div>
 
         <div class="clearfix"></div>
@@ -263,41 +260,7 @@
     <div class="article-entry" itemprop="articleBody">
       
           
-        <p>缘起：YYH大二下成功申请转专业到信科，这学期上数据库系统原理课并把这门课的MOOC推荐给我。无奈党德鹏老师用的PostgreSQL只兼容Windows系统<del>(Mac党摊手)</del>。一番搜索后，找到了对Linux系统友好的MySQL，开始了自己瞎折腾。先更基本语句，函数、备份…有时间更。<br><a id="more"></a></p>
-<hr>
-<h1 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h1><p><a href="https://dev.mysql.com/downloads/mysql/" target="_blank" rel="noopener">官网链接https://dev.mysql.com/downloads/mysql/</a><br>-&gt; <code>dmg文件安装</code> -&gt; <code>系统偏好设置</code>Start/Stop</p>
-<h1 id="登录-amp-登出"><a href="#登录-amp-登出" class="headerlink" title="登录&amp;登出"></a>登录&amp;登出</h1><p><code>mysql -h 主机名 -u 用户名 -p</code></p>
-<ul>
-<li>-h: 登录自己电脑时可以省略</li>
-<li>-p: 对于没有加密的用户可以省略</li>
-</ul>
-<p><code>mysql -u root -p</code><br><code>quit/exit</code></p>
-<h1 id="创建"><a href="#创建" class="headerlink" title="创建"></a>创建</h1><p>创建库<code>create database DB_NAME</code><br>查看已有数据库<code>show databases</code></p>
-<hr>
-<p>登录指定数据库<code>use DB_NAME</code><br>创建表<code>create table TA_NAME(对列的声明)</code><br>对主键的声明<code>id int unsigned not null auto_increment primary key</code></p>
-<ul>
-<li>id：该列名称</li>
-<li>int：整数型</li>
-<li>unsigned：无符号型</li>
-<li>auto_increment：插入数据时若该列为null，将自动产生一个比现存值更大的唯一标识符值</li>
-<li>primary key：表明该列为主键</li>
-</ul>
-<h1 id="操作"><a href="#操作" class="headerlink" title="操作"></a>操作</h1><h2 id="插入"><a href="#插入" class="headerlink" title="插入"></a>插入</h2><p><code>insert into TA_NAME (列1，列2) values (值1，值2)</code></p>
-<h2 id="查询"><a href="#查询" class="headerlink" title="查询"></a>查询</h2><p><code>select 列名 from TA_NAME where 条件</code></p>
-<ul>
-<li>列名改为 * 表示查询整表</li>
-</ul>
-<h2 id="更新"><a href="#更新" class="headerlink" title="更新"></a>更新</h2><p><code>update TA_NAME set 更新的内容 where 条件</code></p>
-<h2 id="删除"><a href="#删除" class="headerlink" title="删除"></a>删除</h2><p>内容删除 <code>delete from TA_NAME where 条件</code><br>表删除  <code>drop table TA_NAME</code><br>数据库删除<code>drop database DB_NAME</code></p>
-<h2 id="修改"><a href="#修改" class="headerlink" title="修改"></a>修改</h2><p><code>alter table TA_NAME 操作</code><br>操作包括：</p>
-<ul>
-<li>添加列 <code>add 列名 数据类型 位置</code></li>
-</ul>
-<ul>
-<li>修改列 <code>change 列名 列新名字 数据类型</code></li>
-<li>删除列 <code>drop 列名</code></li>
-<li>重命名表<code>rename 新TA_NAME</code></li>
-</ul>
+        <a id="more"></a>
 
       
     </div>
@@ -308,12 +271,6 @@
 
 
     <nav id="article-nav">
-        
-            <div id="article-nav-newer" class="article-nav-title">
-                <a href="/2019/01/23/计算代数论文TeX代码/">
-                    计算代数论文TeX代码
-                </a>
-            </div>
         
         
             <div id="article-nav-older" class="article-nav-title">
@@ -330,7 +287,7 @@
     <div id="toc" class="toc-article">
         <strong class="toc-title">文章目录</strong>
         
-            <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#安装"><span class="toc-number">1.</span> <span class="toc-text">安装</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#登录-amp-登出"><span class="toc-number">2.</span> <span class="toc-text">登录&amp;登出</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#创建"><span class="toc-number">3.</span> <span class="toc-text">创建</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#操作"><span class="toc-number">4.</span> <span class="toc-text">操作</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#插入"><span class="toc-number">4.1.</span> <span class="toc-text">插入</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#查询"><span class="toc-number">4.2.</span> <span class="toc-text">查询</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#更新"><span class="toc-number">4.3.</span> <span class="toc-text">更新</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#删除"><span class="toc-number">4.4.</span> <span class="toc-text">删除</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#修改"><span class="toc-number">4.5.</span> <span class="toc-text">修改</span></a></li></ol></li></ol>
+            
         
     </div>
     <style>
@@ -361,9 +318,7 @@
 
     <div class="scroll" id="post-nav-button">
         
-            <a href="/2019/01/23/计算代数论文TeX代码/" title="上一篇: 计算代数论文TeX代码">
-                <i class="fa fa-angle-left"></i>
-            </a>
+            <a href="/" title="回到主页"><i class="fa fa-home"></i></a>
         
 
         <a title="文章列表"><i class="fa fa-bars"></i><i class="fa fa-times"></i></a>
@@ -375,7 +330,7 @@
         
     </div>
 
-    <ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2019/01/23/计算代数论文TeX代码/">计算代数论文TeX代码</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/09/16/MySQL/">MySQL</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/08/05/12天留给济豫，我们一起长大/">12天留给济豫，我们一起长大</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/06/12/诗词格律第四次作业/">诗词格律第四次作业--词</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/05/20/诗词格律第三次作业/">诗词格律第三次作业--古风</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/04/22/18美赛/">18美赛</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/03/18/诗词格律第一次作业/">诗词格律第一次作业--绝句</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/02/16/单词打卡04/">单词打卡04</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/02/15/单词打卡03/">单词打卡03</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/02/14/单词打卡02/">单词打卡02</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/02/12/单词打卡01/">单词打卡01</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/02/09/Hexo设置/">Hexo设置</a></li></ul>
+    <ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2018/09/16/MySQL/">SQL</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/08/05/12天留给济豫，我们一起长大/">12天留给济豫，我们一起长大</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/06/12/诗词格律作业汇总/">诗词格律作业</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/04/22/18美赛/">18美赛</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/02/09/Hexo设置/">Hexo设置</a></li></ul>
 
 
 
