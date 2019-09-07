@@ -15,18 +15,18 @@
 
 
 
-<meta name="description" content="元字符      位置       ^       开头      $      结尾      \b      开始或结尾     创建日期：        最后更新：        密    级：        版权说明：">
+<meta name="description" content="元字符  位置   ^   开头  $  结尾  \b  开始或结尾  字符  .  除换行符外任意字符  \w  字母/数字/汉字/下划线  \s  空白字符(空格/换行符/制表符)  \d  数字  字符类  [aeiou]  集合中的任意字符  [^aeiou]  集合以外的字符  [0-9a-zA-Z_]  等价于\w  字符类  {n}  重复n次  {m,n}  重复至少m次，至多n">
 <meta name="keywords" content="计算机">
 <meta property="og:type" content="article">
 <meta property="og:title" content="正则表达式">
 <meta property="og:url" content="http://yoursite.com/2019/09/07/正则表达式/index.html">
 <meta property="og:site_name" content="吕文昊的博客">
-<meta property="og:description" content="元字符      位置       ^       开头      $      结尾      \b      开始或结尾     创建日期：        最后更新：        密    级：        版权说明：">
+<meta property="og:description" content="元字符  位置   ^   开头  $  结尾  \b  开始或结尾  字符  .  除换行符外任意字符  \w  字母/数字/汉字/下划线  \s  空白字符(空格/换行符/制表符)  \d  数字  字符类  [aeiou]  集合中的任意字符  [^aeiou]  集合以外的字符  [0-9a-zA-Z_]  等价于\w  字符类  {n}  重复n次  {m,n}  重复至少m次，至多n">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-09-07T09:02:13.000Z">
+<meta property="og:updated_time" content="2019-09-07T11:10:37.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="正则表达式">
-<meta name="twitter:description" content="元字符      位置       ^       开头      $      结尾      \b      开始或结尾     创建日期：        最后更新：        密    级：        版权说明：">
+<meta name="twitter:description" content="元字符  位置   ^   开头  $  结尾  \b  开始或结尾  字符  .  除换行符外任意字符  \w  字母/数字/汉字/下划线  \s  空白字符(空格/换行符/制表符)  \d  数字  字符类  [aeiou]  集合中的任意字符  [^aeiou]  集合以外的字符  [0-9a-zA-Z_]  等价于\w  字符类  {n}  重复n次  {m,n}  重复至少m次，至多n">
 
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 
@@ -263,7 +263,14 @@
     <div class="article-entry" itemprop="articleBody">
       
           
-        <table><br><tr><br>    <td rowspan="7"> 元字符 </td><br>    <td rowspan="3"> 位置 </td><br>    <td>  ^ </td><br>    <td>  开头 </td><br></tr><br><tr><br>    <td> $ </td><br>    <td> 结尾 </td><br></tr><br><tr><br>    <td> \b </td><br>    <td> 开始或结尾 </td><br></tr><br><tr><br>    <td>创建日期：</td><br>    <td></td><br></tr><br><tr><br>    <td>最后更新：</td><br>    <td></td><br></tr><br><tr><br>    <td>密    级：</td><br>    <td></td><br></tr><br><tr><br>    <td>版权说明：</td><br>    <td></td><br></tr><br></table>
+        <table><tr><td rowspan="7"> 元字符 </td><td rowspan="3"> 位置 </td><td>  ^ </td><td>  开头 </td></tr><tr><td> $ </td><td> 结尾 </td></tr><tr><td> \b </td><td> 开始或结尾 </td></tr><tr><td rowspan="4"> 字符 </td><td> . </td><td> 除换行符外任意字符 </td></tr><tr><td> \w </td><td> 字母/数字/汉字/下划线 </td></tr><tr><td> \s </td><td> 空白字符(空格/换行符/制表符) </td></tr><tr><td> \d </td><td> 数字 </td></tr><tr><td rowspan="3" colspan="2"> 字符类 </td><td> [aeiou] </td><td> 集合中的任意字符 </td></tr><tr><td> [^aeiou] </td><td> 集合以外的字符 </td></tr><tr><td> [0-9a-zA-Z_] </td><td> 等价于\w </td></tr><tr><td rowspan="5" colspan="2"> 字符类 </td><td> {n} </td><td> 重复n次 </td></tr><tr><td> {m,n} </td><td> 重复至少m次，至多n次 </td></tr><tr><td> * </td><td> 重复至少0次 </td></tr><tr><td> + </td><td> 重复至少1次 </td></tr><tr><td> ？ </td><td> 重复0次或1次 </td></tr><tr><td colspan="2"> 替换 </td><td> 规则1|规则2 </td><td> 匹配了规则1或规则2 </td></tr></table>
+
+<table><tr><td>身份证号码验证</td><td>^\d{6}((19)|(20))\d{2}((0\d)|(1[0-2]))(([0-2]\d)|(3[01]))\d{3}(\d|X)$ </td></tr><tr><td>手机号码验证</td><td> </td></tr><tr><td>邮箱验证</td><td> </td></tr><tr><td>日期验证</td><td> </td></tr></table>
+
+
+
+
+
       
     </div>
     
