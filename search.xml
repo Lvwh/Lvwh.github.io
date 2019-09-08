@@ -3,17 +3,17 @@
   <entry>
     <title><![CDATA[正则表达式]]></title>
     <url>%2F2019%2F09%2F07%2F%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F%2F</url>
-    <content type="text"><![CDATA[元字符 位置 ^ 开头 $ 结尾 \b 开始或结尾 字符 . 除换行符外任意字符 \w 字母/数字/汉字/下划线 \s 空白字符(空格/换行符/制表符) \d 数字 字符类 [aeiou] 集合中的任意字符 [^aeiou] 集合以外的字符 [0-9a-zA-Z_] 等价于\w 字符类 {n} 重复n次 {m,n} 重复至少m次，至多n次 * 重复至少0次 + 重复至少1次 ？ 重复0次或1次 替换 规则1|规则2 匹配了规则1或规则2 身份证号码验证^\d{6}((19)|(20))\d{2}((0\d)|(1[0-2]))(([0-2]\d)|(3[01]))\d{3}(\d|X)$ 手机号码验证 邮箱验证 日期验证]]></content>
+    <content type="text"><![CDATA[元字符 位置 ^ 开头 $ 结尾 \b 开始或结尾 字符 . 除换行符外任意字符 \w 字母/数字/汉字/下划线 \s 空白字符(空格/换行符/制表符) \d 数字 字符类 [aeiou] 集合中的任意字符 [^aeiou] 集合以外的字符 [0-9a-zA-Z_] 等价于\w 限定符 {n} 重复n次 {m,n} 重复至少m次，至多n次 * 重复至少0次 + 重复至少1次 ？ 重复0次或1次 替换 规则1|规则2 匹配了规则1或规则2 身份证号码验证^\d{6}((19)|(20))\d{2}((0\d)|(1[0-2]))(([0-2]\d)|(3[01]))\d{3}(\d|X)$ 6位地址码年份开头19/20任意2位手机号码验证 邮箱验证 日期验证]]></content>
       <tags>
         <tag>计算机</tag>
       </tags>
   </entry>
   <entry>
     <title><![CDATA[SQL]]></title>
-    <url>%2F2018%2F09%2F16%2FMySQL%2F</url>
-    <content type="text"><![CDATA[]]></content>
+    <url>%2F2018%2F10%2F16%2FSQL%2F</url>
+    <content type="text"><![CDATA[参考资料：[1] 落落. (2018). Oracle查询优化改写技巧与案例2.0. 北京: 电子工业出版社.[2] 高守传. (2007). 精通SQL：结构化查询语言详解. 北京: 人民邮电出版社.[3] 徐桂祥. (2011). SQL案例解析：以SQL Server与Oracle为例. 北京: 清华大学出版社. 单表查询空值NULL值不能参与运算，查询时只能通过is(或is not) NULL判断 拼接列用+把各列拼在一起，例如select column_1+&#39;的学号是&#39;+column_2 from table_1 在select语句中使用条件逻辑查询时按条件进行分类123456select column_1,column_2, (case when 条件1 then 分类1 when 条件2 then 分类2 else 分类3 end) as column_3 from table_1 按条件分档次并统计各档次总数1234567select 档次, count(*) as 总数 from(select (case when 条件1 then 档次1 when 条件2 then 档次2 else 档次3 end) as 档次 from table_1)group by 档次 查询结果排序按多个字段排序order by 升序列 asc, 降序列 desc如果出现NULL值，默认NULL值最大，即升序中排在最后，降序中排在最前 自定义条件排序1234567select column_1,column_2, (case when 条件1 then &apos;1&apos; when 条件2 then &apos;2&apos; when 条件3 then &apos;3&apos; end) as num from table_1order by num 多表查询]]></content>
       <tags>
-        <tag>SQL</tag>
+        <tag>计算机</tag>
       </tags>
   </entry>
   <entry>
