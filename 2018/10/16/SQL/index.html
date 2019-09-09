@@ -15,18 +15,18 @@
 
 
 
-<meta name="description" content="参考资料: [1] 高守传. (2007). 精通SQL：结构化查询语言详解. 北京: 人民邮电出版社. [2] 落落. (2018). Oracle查询优化改写技巧与案例2.0. 北京: 电子工业出版社. [3] 徐桂祥. (2011). SQL案例解析：以SQL Server与Oracle为例. 北京: 清华大学出版社. [4] 魏新年. (2015). SQL Server数据库基础与进">
+<meta name="description" content="单表查询  空值 NULL值不能参与运算，查询时只能通过is(或is not) NULL判断  coalesce函数： coalesce(expression_1,expression_2,...) 取得一连串中第一个非NULL值，若所有都是NULL值则返回NULL值 coalesce(expression_1,expression_2) 若expression_1是NULL值则返回expres">
 <meta name="keywords" content="计算机">
 <meta property="og:type" content="article">
 <meta property="og:title" content="SQL">
 <meta property="og:url" content="http://yoursite.com/2018/10/16/SQL/index.html">
 <meta property="og:site_name" content="吕文昊的博客">
-<meta property="og:description" content="参考资料: [1] 高守传. (2007). 精通SQL：结构化查询语言详解. 北京: 人民邮电出版社. [2] 落落. (2018). Oracle查询优化改写技巧与案例2.0. 北京: 电子工业出版社. [3] 徐桂祥. (2011). SQL案例解析：以SQL Server与Oracle为例. 北京: 清华大学出版社. [4] 魏新年. (2015). SQL Server数据库基础与进">
+<meta property="og:description" content="单表查询  空值 NULL值不能参与运算，查询时只能通过is(或is not) NULL判断  coalesce函数： coalesce(expression_1,expression_2,...) 取得一连串中第一个非NULL值，若所有都是NULL值则返回NULL值 coalesce(expression_1,expression_2) 若expression_1是NULL值则返回expres">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-09-09T10:20:37.000Z">
+<meta property="og:updated_time" content="2019-09-09T11:44:50.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="SQL">
-<meta name="twitter:description" content="参考资料: [1] 高守传. (2007). 精通SQL：结构化查询语言详解. 北京: 人民邮电出版社. [2] 落落. (2018). Oracle查询优化改写技巧与案例2.0. 北京: 电子工业出版社. [3] 徐桂祥. (2011). SQL案例解析：以SQL Server与Oracle为例. 北京: 清华大学出版社. [4] 魏新年. (2015). SQL Server数据库基础与进">
+<meta name="twitter:description" content="单表查询  空值 NULL值不能参与运算，查询时只能通过is(或is not) NULL判断  coalesce函数： coalesce(expression_1,expression_2,...) 取得一连串中第一个非NULL值，若所有都是NULL值则返回NULL值 coalesce(expression_1,expression_2) 若expression_1是NULL值则返回expres">
 
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 
@@ -89,6 +89,11 @@
 
 
 
+
+
+
+
+<link href="https://cdn.bootcss.com/KaTeX/0.7.1/katex.min.css" rel="stylesheet">
 
 
 </head></html>
@@ -262,15 +267,7 @@
     <div class="article-entry" itemprop="articleBody">
       
           
-        <blockquote>
-<p><font size="3" face="宋体"> 参考资料:<br>
-[1] 高守传. (2007). 精通SQL：结构化查询语言详解. 北京: 人民邮电出版社.<br>
-[2] 落落. (2018). Oracle查询优化改写技巧与案例2.0. 北京: 电子工业出版社.<br>
-[3] 徐桂祥. (2011). SQL案例解析：以SQL Server与Oracle为例. 北京: 清华大学出版社.<br>
-[4] 魏新年. (2015). SQL Server数据库基础与进阶. 北京: 清华大学出版社.<br>
-</font></p>
-</blockquote>
-<h1 id="单表查询"><a class="markdownIt-Anchor" href="#单表查询"></a> 单表查询</h1>
+        <h1 id="单表查询"><a class="markdownIt-Anchor" href="#单表查询"></a> 单表查询</h1>
 <h3 id="空值"><a class="markdownIt-Anchor" href="#空值"></a> 空值</h3>
 <p>NULL值不能参与运算，查询时只能通过<code>is(或is not) NULL</code>判断</p>
 <blockquote>
@@ -304,7 +301,7 @@
 <p><code>left join</code> 左表为主表，返回左表所有数据，右表中只返回与左表相匹配数据<br>
 <code>right join</code>同理</p>
 <h1 id="查询结果集合运算"><a class="markdownIt-Anchor" href="#查询结果集合运算"></a> 查询结果集合运算</h1>
-<table><tr><td width="6%">并</td><td>`查询1 union 查询2`</td></tr><tr><td>交</td><td>`查询1 intersect 查询2`</td></tr><tr><td>差</td><td>`查询1 except 查询2`</td></tr><tr><td>和</td><td>`查询1 union all 查询2`</td></tr></table>
+<table><tr><td width="6%"> 交 </td><td>`查询1 union 查询2`</td></tr><tr><td>交</td><td>`查询1 intersect 查询2`</td></tr><tr><td>差</td><td>`查询1 except 查询2`</td></tr><tr><td>和</td><td>`查询1 union all 查询2`</td></tr></table>
 <h1 id="字符串函数"><a class="markdownIt-Anchor" href="#字符串函数"></a> 字符串函数</h1>
 <h3 id="截取字符串"><a class="markdownIt-Anchor" href="#截取字符串"></a> 截取字符串</h3>
 <p><code>substring(字符串,开始位置,截取长度)</code> 从开始位置截取一定长度的子字符串<br>
@@ -322,6 +319,15 @@
 <code>rtrim(字符串)</code> 删除字符串后面的空格符</p>
 <h3 id="字符串替换"><a class="markdownIt-Anchor" href="#字符串替换"></a> 字符串替换</h3>
 <p><code>replace(expression_1,旧字符,新字符)</code></p>
+<p> </p>
+<blockquote>
+<p><font size="3" face="宋体"> 参考资料:<br>
+[1] 高守传. (2007). 精通SQL：结构化查询语言详解. 北京: 人民邮电出版社.<br>
+[2] 落落. (2018). Oracle查询优化改写技巧与案例2.0. 北京: 电子工业出版社.<br>
+[3] 徐桂祥. (2011). SQL案例解析：以SQL Server与Oracle为例. 北京: 清华大学出版社.<br>
+[4] 魏新年. (2015). SQL Server数据库基础与进阶. 北京: 清华大学出版社.<br>
+</font></p>
+</blockquote>
 
       
     </div>

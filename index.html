@@ -94,6 +94,11 @@
 
 
 
+
+
+<link href="https://cdn.bootcss.com/KaTeX/0.7.1/katex.min.css" rel="stylesheet">
+
+
 </head></html>
 <body>
   <div id="container">
@@ -256,7 +261,9 @@
     <div class="article-entry" itemprop="articleBody">
       
           
-        <p><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>α</mi></mrow><annotation encoding="application/x-tex">\alpha</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.43056em;"></span><span class="strut bottom" style="height:0.43056em;vertical-align:0em;"></span><span class="base textstyle uncramped"><span class="mord mathit" style="margin-right:0.0037em;">α</span></span></span></span></p>
+        <p><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>α</mi></mrow><annotation encoding="application/x-tex">\alpha</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.43056em;"></span><span class="strut bottom" style="height:0.43056em;vertical-align:0em;"></span><span class="base textstyle uncramped"><span class="mord mathit" style="margin-right:0.0037em;">α</span></span></span></span><br>
+<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mn>1</mn><mo>×</mo><mn>2</mn></mrow><annotation encoding="application/x-tex">1 \times 2</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.64444em;"></span><span class="strut bottom" style="height:0.72777em;vertical-align:-0.08333em;"></span><span class="base textstyle uncramped"><span class="mord mathrm">1</span><span class="mbin">×</span><span class="mord mathrm">2</span></span></span></span><br>
+<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mo>∩</mo></mrow><annotation encoding="application/x-tex">\cap</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.55556em;"></span><span class="strut bottom" style="height:0.55556em;vertical-align:0em;"></span><span class="base textstyle uncramped"><span class="mord">∩</span></span></span></span></p>
 
       
     </div>
@@ -266,6 +273,10 @@
       
 
       
+    <div class="article-tag tagcloud">
+        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/计算机/">计算机</a></li></ul>
+    </div>
+
       
       <div class="clearfix"></div>
     </div>
@@ -376,15 +387,7 @@
     <div class="article-entry" itemprop="articleBody">
       
           
-              <blockquote>
-<p><font size="3" face="宋体"> 参考资料:<br>
-[1] 高守传. (2007). 精通SQL：结构化查询语言详解. 北京: 人民邮电出版社.<br>
-[2] 落落. (2018). Oracle查询优化改写技巧与案例2.0. 北京: 电子工业出版社.<br>
-[3] 徐桂祥. (2011). SQL案例解析：以SQL Server与Oracle为例. 北京: 清华大学出版社.<br>
-[4] 魏新年. (2015). SQL Server数据库基础与进阶. 北京: 清华大学出版社.<br>
-</font></p>
-</blockquote>
-<h1 id="单表查询"><a class="markdownIt-Anchor" href="#单表查询"></a> 单表查询</h1>
+              <h1 id="单表查询"><a class="markdownIt-Anchor" href="#单表查询"></a> 单表查询</h1>
 <h3 id="空值"><a class="markdownIt-Anchor" href="#空值"></a> 空值</h3>
 <p>NULL值不能参与运算，查询时只能通过<code>is(或is not) NULL</code>判断</p>
 <blockquote>
@@ -648,7 +651,16 @@
     <div class="article-entry" itemprop="articleBody">
       
           
-              <center><font size="5">个性化设置博客</font></center>
+              <h2 id="渲染latex公式"><a class="markdownIt-Anchor" href="#渲染latex公式"></a> 渲染LaTeX公式</h2>
+<h3 id="1-卸载marked渲染器安装markdown-it-plus渲染器"><a class="markdownIt-Anchor" href="#1-卸载marked渲染器安装markdown-it-plus渲染器"></a> 1、卸载marked渲染器，安装markdown it plus渲染器</h3>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">npm uninstall hexo-render-marked --save</span><br><span class="line">npm install hexo-renderer-markdown-it-plus --save</span><br></pre></td></tr></table></figure>
+<h3 id="2-配置_configyml文件"><a class="markdownIt-Anchor" href="#2-配置_configyml文件"></a> 2、配置<code>_config.yml</code>文件</h3>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">markdown_it_plus:</span><br><span class="line">  highlight: true</span><br><span class="line">  html: true</span><br><span class="line">  xhtmlOut: true</span><br><span class="line">  breaks: true</span><br><span class="line">  langPrefix:</span><br><span class="line">  linkify: true</span><br><span class="line">  typographer:</span><br><span class="line">  quotes: “”‘’</span><br><span class="line">  plugins:</span><br><span class="line">    - plugin:</span><br><span class="line">        name: markdown-it-katex</span><br><span class="line">        enable: true</span><br><span class="line">    - plugin:</span><br><span class="line">        name: markdown-it-mark</span><br><span class="line">        enable: false</span><br></pre></td></tr></table></figure>
+<h3 id="3-在head中加载katex的css样式"><a class="markdownIt-Anchor" href="#3-在head中加载katex的css样式"></a> 3、在<code>head</code>中加载Katex的CSS样式</h3>
+<p>在<code>/themes/所选主题/layout/_partial/head.ejs</code>中写入</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;link href=&quot;https://cdn.bootcss.com/KaTeX/0.7.1/katex.min.css&quot; rel=&quot;stylesheet&quot;&gt;</span><br></pre></td></tr></table></figure>
+<h3 id="4-遇到报错cannot-find-module-markdown-it-katex"><a class="markdownIt-Anchor" href="#4-遇到报错cannot-find-module-markdown-it-katex"></a> 4、遇到报错<code>Cannot find module 'markdown-it-katex'</code></h3>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install markdown-it-katex --save</span><br></pre></td></tr></table></figure>
           
       
     </div>

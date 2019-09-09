@@ -15,18 +15,18 @@
 
 
 
-<meta name="description" content="个性化设置博客">
+<meta name="description" content="渲染LaTeX公式  1、卸载marked渲染器，安装markdown it plus渲染器 12npm uninstall hexo-render-marked --savenpm install hexo-renderer-markdown-it-plus --save  2、配置_config.yml文件 12345678910111213141516markdown_it_plus:">
 <meta name="keywords" content="Hexo">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Hexo设置">
 <meta property="og:url" content="http://yoursite.com/2018/02/09/Hexo设置/index.html">
 <meta property="og:site_name" content="吕文昊的博客">
-<meta property="og:description" content="个性化设置博客">
+<meta property="og:description" content="渲染LaTeX公式  1、卸载marked渲染器，安装markdown it plus渲染器 12npm uninstall hexo-render-marked --savenpm install hexo-renderer-markdown-it-plus --save  2、配置_config.yml文件 12345678910111213141516markdown_it_plus:">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-09-08T06:09:56.000Z">
+<meta property="og:updated_time" content="2019-09-09T11:03:42.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Hexo设置">
-<meta name="twitter:description" content="个性化设置博客">
+<meta name="twitter:description" content="渲染LaTeX公式  1、卸载marked渲染器，安装markdown it plus渲染器 12npm uninstall hexo-render-marked --savenpm install hexo-renderer-markdown-it-plus --save  2、配置_config.yml文件 12345678910111213141516markdown_it_plus:">
 
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 
@@ -89,6 +89,11 @@
 
 
 
+
+
+
+
+<link href="https://cdn.bootcss.com/KaTeX/0.7.1/katex.min.css" rel="stylesheet">
 
 
 </head></html>
@@ -262,12 +267,21 @@
     <div class="article-entry" itemprop="articleBody">
       
           
-        <center><font size="5">个性化设置博客</font></center>
+        <h2 id="渲染latex公式"><a class="markdownIt-Anchor" href="#渲染latex公式"></a> 渲染LaTeX公式</h2>
+<h3 id="1-卸载marked渲染器安装markdown-it-plus渲染器"><a class="markdownIt-Anchor" href="#1-卸载marked渲染器安装markdown-it-plus渲染器"></a> 1、卸载marked渲染器，安装markdown it plus渲染器</h3>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">npm uninstall hexo-render-marked --save</span><br><span class="line">npm install hexo-renderer-markdown-it-plus --save</span><br></pre></td></tr></table></figure>
+<h3 id="2-配置_configyml文件"><a class="markdownIt-Anchor" href="#2-配置_configyml文件"></a> 2、配置<code>_config.yml</code>文件</h3>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">markdown_it_plus:</span><br><span class="line">  highlight: true</span><br><span class="line">  html: true</span><br><span class="line">  xhtmlOut: true</span><br><span class="line">  breaks: true</span><br><span class="line">  langPrefix:</span><br><span class="line">  linkify: true</span><br><span class="line">  typographer:</span><br><span class="line">  quotes: “”‘’</span><br><span class="line">  plugins:</span><br><span class="line">    - plugin:</span><br><span class="line">        name: markdown-it-katex</span><br><span class="line">        enable: true</span><br><span class="line">    - plugin:</span><br><span class="line">        name: markdown-it-mark</span><br><span class="line">        enable: false</span><br></pre></td></tr></table></figure>
+<h3 id="3-在head中加载katex的css样式"><a class="markdownIt-Anchor" href="#3-在head中加载katex的css样式"></a> 3、在<code>head</code>中加载Katex的CSS样式</h3>
+<p>在<code>/themes/所选主题/layout/_partial/head.ejs</code>中写入</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;link href=&quot;https://cdn.bootcss.com/KaTeX/0.7.1/katex.min.css&quot; rel=&quot;stylesheet&quot;&gt;</span><br></pre></td></tr></table></figure>
+<h3 id="4-遇到报错cannot-find-module-markdown-it-katex"><a class="markdownIt-Anchor" href="#4-遇到报错cannot-find-module-markdown-it-katex"></a> 4、遇到报错<code>Cannot find module 'markdown-it-katex'</code></h3>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install markdown-it-katex --save</span><br></pre></td></tr></table></figure>
 <a id="more"></a>
-## 首页文章截断显示
-< !-\-more-\- >
-## live2d模型
-`blog/_config.yml`
+<h2 id="首页文章截断显示"><a class="markdownIt-Anchor" href="#首页文章截断显示"></a> 首页文章截断显示</h2>
+<p>&lt; !--more-- &gt;</p>
+<h2 id="live2d模型"><a class="markdownIt-Anchor" href="#live2d模型"></a> live2d模型</h2>
+<p><code>blog/_config.yml</code></p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">live2d:</span><br><span class="line">  enable: true</span><br><span class="line">  scriptFrom: local</span><br><span class="line">  pluginRootPath: live2dw/</span><br><span class="line">  pluginJsPath: lib/</span><br><span class="line">  pluginModelPath: assets/</span><br><span class="line">  tagMode: false</span><br><span class="line">  debug: false</span><br><span class="line">  model:</span><br><span class="line">    use: live2d-widget-model-模型名</span><br><span class="line">  display:</span><br><span class="line">    position: right</span><br><span class="line">    width: 150</span><br><span class="line">    height: 300</span><br><span class="line">  mobile:</span><br><span class="line">    show: true</span><br></pre></td></tr></table></figure>
 <p>下载模型</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install live2d-widget-model-模型名</span><br></pre></td></tr></table></figure>
@@ -276,8 +290,9 @@
 <code>tororo</code> 白猫</p>
 <h2 id="更换主题"><a class="markdownIt-Anchor" href="#更换主题"></a> 更换主题</h2>
 <h3 id="yelee"><a class="markdownIt-Anchor" href="#yelee"></a> yelee</h3>
-<p><code>git clone https://github.com/MOxFIVE/hexo-theme-yelee.git themes/yelee</code><br>
-出现<code>error: RPC failed; curl 18 transfer closed with outstanding read data remaining</code>解决办法：<code>git config --global http.postBuffer 524288000</code></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git clone https://github.com/MOxFIVE/hexo-theme-yelee.git themes/yelee</span><br></pre></td></tr></table></figure>
+<p>报错<code>error: RPC failed; curl 18 transfer closed with outstanding read data remaining</code>解决办法：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git config --global http.postBuffer 524288000</span><br></pre></td></tr></table></figure>
 <h2 id="next主题"><a class="markdownIt-Anchor" href="#next主题"></a> Next主题</h2>
 <h3 id="头部"><a class="markdownIt-Anchor" href="#头部"></a> 头部</h3>
 <p><code>themes/next/_config.yml avatar</code> 设置头像图片名<br>
@@ -292,7 +307,7 @@
 <code>background: $headband-bg;</code></p>
 <h3 id="页面颜色-位置等设置"><a class="markdownIt-Anchor" href="#页面颜色-位置等设置"></a> 页面颜色、位置等设置</h3>
 <p><code>themes/next/source/css/_custom/custom.styl</code><br>
-参考 <a href="https://reuixiy.github.io/technology/computer/computer-aided-art/2017/06/09/hexo-next-optimization.html" target="_blank" rel="noopener">reuixiy.github.io</a></p>
+<font size="3" face="宋体"> 参考 <a href="https://reuixiy.github.io/technology/computer/computer-aided-art/2017/06/09/hexo-next-optimization.html" target="_blank" rel="noopener">reuixiy.github.io</a> </font></p>
 <h3 id="页面宽度"><a class="markdownIt-Anchor" href="#页面宽度"></a> 页面宽度</h3>
 <p><code>themes/next/source/css/_schemes/Picses/layout.styl</code></p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">header&#123; width: 百分比 !important; &#125;</span><br><span class="line">header.post-header &#123;</span><br><span class="line">  width: auto !important;</span><br><span class="line">&#125;</span><br><span class="line">.container .main-inner &#123; width: 百分比; &#125;</span><br><span class="line">.content-wrap &#123; width: calc(100% - 260px); &#125;</span><br></pre></td></tr></table></figure>
@@ -325,7 +340,7 @@
     <div id="toc" class="toc-article">
         <strong class="toc-title">文章目录</strong>
         
-            <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#更换主题"><span class="toc-number">1.</span> <span class="toc-text"> 更换主题</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#yelee"><span class="toc-number">1.1.</span> <span class="toc-text"> yelee</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#next主题"><span class="toc-number">2.</span> <span class="toc-text"> Next主题</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#头部"><span class="toc-number">2.1.</span> <span class="toc-text"> 头部</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#底部"><span class="toc-number">2.2.</span> <span class="toc-text"> 底部</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#图标"><span class="toc-number">2.2.1.</span> <span class="toc-text"> 图标</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#顶部"><span class="toc-number">2.3.</span> <span class="toc-text"> 顶部</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#黑线"><span class="toc-number">2.3.1.</span> <span class="toc-text"> 黑线</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#页面颜色-位置等设置"><span class="toc-number">2.4.</span> <span class="toc-text"> 页面颜色、位置等设置</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#页面宽度"><span class="toc-number">2.5.</span> <span class="toc-text"> 页面宽度</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#简介栏文本颜色设置"><span class="toc-number">2.6.</span> <span class="toc-text"> 简介栏文本颜色设置</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#yelee主题"><span class="toc-number">3.</span> <span class="toc-text"> Yelee主题</span></a></li></ol>
+            <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#渲染latex公式"><span class="toc-number">1.</span> <span class="toc-text"> 渲染LaTeX公式</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-卸载marked渲染器安装markdown-it-plus渲染器"><span class="toc-number">1.1.</span> <span class="toc-text"> 1、卸载marked渲染器，安装markdown it plus渲染器</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-配置_configyml文件"><span class="toc-number">1.2.</span> <span class="toc-text"> 2、配置_config.yml文件</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-在head中加载katex的css样式"><span class="toc-number">1.3.</span> <span class="toc-text"> 3、在head中加载Katex的CSS样式</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-遇到报错cannot-find-module-markdown-it-katex"><span class="toc-number">1.4.</span> <span class="toc-text"> 4、遇到报错Cannot find module &#39;markdown-it-katex&#39;</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#首页文章截断显示"><span class="toc-number">2.</span> <span class="toc-text"> 首页文章截断显示</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#live2d模型"><span class="toc-number">3.</span> <span class="toc-text"> live2d模型</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#更换主题"><span class="toc-number">4.</span> <span class="toc-text"> 更换主题</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#yelee"><span class="toc-number">4.1.</span> <span class="toc-text"> yelee</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#next主题"><span class="toc-number">5.</span> <span class="toc-text"> Next主题</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#头部"><span class="toc-number">5.1.</span> <span class="toc-text"> 头部</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#底部"><span class="toc-number">5.2.</span> <span class="toc-text"> 底部</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#图标"><span class="toc-number">5.2.1.</span> <span class="toc-text"> 图标</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#顶部"><span class="toc-number">5.3.</span> <span class="toc-text"> 顶部</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#黑线"><span class="toc-number">5.3.1.</span> <span class="toc-text"> 黑线</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#页面颜色-位置等设置"><span class="toc-number">5.4.</span> <span class="toc-text"> 页面颜色、位置等设置</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#页面宽度"><span class="toc-number">5.5.</span> <span class="toc-text"> 页面宽度</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#简介栏文本颜色设置"><span class="toc-number">5.6.</span> <span class="toc-text"> 简介栏文本颜色设置</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#yelee主题"><span class="toc-number">6.</span> <span class="toc-text"> Yelee主题</span></a></li></ol>
         
     </div>
     <style>
