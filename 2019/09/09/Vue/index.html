@@ -14,20 +14,18 @@
 <meta name="author" content="吕文昊的博客">
 
 
-    
-    
 
-
-<meta name="description" content="静水流深">
-<meta property="og:type" content="website">
-<meta property="og:title" content="吕文昊的博客">
-<meta property="og:url" content="http://yoursite.com/index.html">
+<meta name="description" content="$\alpha$">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Vue">
+<meta property="og:url" content="http://yoursite.com/2019/09/09/Vue/index.html">
 <meta property="og:site_name" content="吕文昊的博客">
-<meta property="og:description" content="静水流深">
+<meta property="og:description" content="$\alpha$">
 <meta property="og:locale" content="zh-Hans">
+<meta property="og:updated_time" content="2019-09-09T10:21:00.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="吕文昊的博客">
-<meta name="twitter:description" content="静水流深">
+<meta name="twitter:title" content="Vue">
+<meta name="twitter:description" content="$\alpha$">
 
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 
@@ -55,13 +53,11 @@
 <link rel="stylesheet" href="/css/style.css">
 
 
-    <style> .article { opacity: 0;} </style>
-
 
 <link href="//cdn.bootcss.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
 
 
-<title>吕文昊的博客</title>
+<title>Vue | 吕文昊的博客</title>
 
 <script src="//cdn.bootcss.com/jquery/2.2.4/jquery.min.js"></script>
 <script src="//cdn.bootcss.com/clipboard.js/1.5.10/clipboard.min.js"></script>
@@ -70,8 +66,8 @@
     var yiliaConfig = {
         fancybox: true,
         animate: true,
-        isHome: true,
-        isPost: false,
+        isHome: false,
+        isPost: true,
         isArchive: false,
         isTag: false,
         isCategory: false,
@@ -226,9 +222,7 @@
     </div>
     <link class="menu-list" tags="标签" friends="友情链接" about="关于我">
 </nav>
-      <div class="body-wrap">
-  
-    <article id="post-Vue" class="article article-type-post" itemscope="" itemprop="blogPost">
+      <div class="body-wrap"><article id="post-Vue" class="article article-type-post" itemscope="" itemprop="blogPost">
   
     <div class="article-meta">
       <a href="/2019/09/09/Vue/" class="article-date">
@@ -246,12 +240,19 @@
       <header class="article-header">
         
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2019/09/09/Vue/">Vue</a>
+    <h1 class="article-title" itemprop="name">
+      Vue
     </h1>
   
 
       </header>
+      
+      <div class="article-info article-info-post">
+        
+
+        
+        <div class="clearfix"></div>
+      </div>
       
     
     <div class="article-entry" itemprop="articleBody">
@@ -262,415 +263,79 @@
       
     </div>
     
-    <div class="article-info article-info-index">
-      
-      
-
-      
-      
-      <div class="clearfix"></div>
-    </div>
-    
   </div>
   
-</article>
-
-
-
-
-
-
-
-
-
-  
-    <article id="post-正则表达式" class="article article-type-post" itemscope="" itemprop="blogPost">
-  
-    <div class="article-meta">
-      <a href="/2019/09/07/正则表达式/" class="article-date">
-      <time datetime="2019-09-07T08:52:07.000Z" itemprop="datePublished">2019-09-07</time>
-</a>
-
-
-    </div>
-  
-  <div class="article-inner">
     
-      <input type="hidden" class="isFancy">
-    
-    
-      <header class="article-header">
+
+
+    <nav id="article-nav">
         
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2019/09/07/正则表达式/">正则表达式</a>
-    </h1>
-  
-
-      </header>
-      
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-          
-        <table><tr><td rowspan="7" width="10%"> 元字符 </td><td rowspan="3" width="5%"> 位置 </td><td>  ^ </td><td>  开头 </td></tr><tr><td> $ </td><td> 结尾 </td></tr><tr><td> \b </td><td> 开始或结尾 </td></tr><tr><td rowspan="4" width="5%"> 字符 </td><td> . </td><td> 除换行符外任意字符 </td></tr><tr><td> \w </td><td> 字母/数字/汉字/下划线 </td></tr><tr><td> \s </td><td> 空白字符(空格/换行符/制表符) </td></tr><tr><td> \d </td><td> 数字 </td></tr><tr><td rowspan="3" colspan="2"> 字符类 </td><td> [aeiou] </td><td> 集合中的任意字符 </td></tr><tr><td> [^aeiou] </td><td> 集合以外的字符 </td></tr><tr><td> [0-9a-zA-Z_] </td><td> 等价于\w </td></tr><tr><td rowspan="5" colspan="2"> 限定符 </td><td> {n} </td><td> 重复n次 </td></tr><tr><td> {m,n} </td><td> 重复至少m次，至多n次 </td></tr><tr><td> * </td><td> 重复至少0次 </td></tr><tr><td> + </td><td> 重复至少1次 </td></tr><tr><td> ？ </td><td> 重复0次或1次 </td></tr><tr><td colspan="2"> 替换 </td><td> 规则1|规则2 </td><td> 匹配了规则1或规则2 </td></tr></table>
-
-<table><tr><td rowspan="2">身份证号码验证</td><td colspan="7">^\d{6}((19)|(20))\d{2}((0\d)|(1[0-2]))(([0-2]\d)|(3[01]))\d{3}(\d|X)$ </td></tr><tr><td>6位地址码</td><td width="11%">19/20</td><td width="11%">任意2位数字</td><td width="10.5%">01~12</td><td width="10.5%">01~31</td><td width="11%">任意3位数字</td><td>数字或X</td></tr><tr><td>手机号码验证</td><td colspan="7"> </td></tr><tr><td>邮箱验证</td><td colspan="7"> </td></tr><tr><td>日期验证</td><td colspan="7"> </td></tr></table>
-
-<blockquote>
-<font size="3" face="宋体"> 参考资料: 王蕾. (2014). 神奇的匹配：正则表达式求精之旅. 北京: 电子工业出版社. </font></blockquote>
-
-      
-    </div>
-    
-    <div class="article-info article-info-index">
-      
-      
-
-      
-    <div class="article-tag tagcloud">
-        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/计算机/">计算机</a></li></ul>
-    </div>
-
-      
-      <div class="clearfix"></div>
-    </div>
-    
-  </div>
-  
-</article>
-
-
-
-
-
-
-
-
-
-  
-    <article id="post-SQL" class="article article-type-post" itemscope="" itemprop="blogPost">
-  
-    <div class="article-meta">
-      <a href="/2018/10/16/SQL/" class="article-date">
-      <time datetime="2018-10-16T02:25:28.000Z" itemprop="datePublished">2018-10-16</time>
-</a>
-
-
-    </div>
-  
-  <div class="article-inner">
-    
-      <input type="hidden" class="isFancy">
-    
-    
-      <header class="article-header">
         
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/10/16/SQL/">SQL</a>
-    </h1>
-  
-
-      </header>
-      
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-          
-              <blockquote>
-<font size="3" face="宋体"> 参考资料:<br>[1] 高守传. (2007). 精通SQL：结构化查询语言详解. 北京: 人民邮电出版社.<br>[2] 落落. (2018). Oracle查询优化改写技巧与案例2.0. 北京: 电子工业出版社.<br>[3] 徐桂祥. (2011). SQL案例解析：以SQL Server与Oracle为例. 北京: 清华大学出版社.<br>[4] 魏新年. (2015). SQL Server数据库基础与进阶. 北京: 清华大学出版社.<br></font>
-</blockquote>
-<h1 id="单表查询"><a href="#单表查询" class="headerlink" title="单表查询"></a>单表查询</h1><h3 id="空值"><a href="#空值" class="headerlink" title="空值"></a>空值</h3><p>NULL值不能参与运算，查询时只能通过<code>is(或is not) NULL</code>判断</p>
-<blockquote>
-<p>coalesce函数：<br><code>coalesce(expression_1,expression_2,...)</code> 取得一连串中第一个非NULL值，若所有都是NULL值则返回NULL值<br><code>coalesce(expression_1,expression_2)</code> 若expression_1是NULL值则返回expression_2，否则保持不变</p>
-</blockquote>
-<blockquote>
-<p>nullif函数：<br><code>nullif(expression_1,expression_2)</code> 当expression_1等于expression_2时返回NULL值，否则返回expression_1</p>
-</blockquote>
-          
-      
-    </div>
-    
-    <div class="article-info article-info-index">
-      
-      
-
-      
-    <div class="article-tag tagcloud">
-        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/计算机/">计算机</a></li></ul>
-    </div>
-
-      
-        <p class="article-more-link">
-          <a href="/2018/10/16/SQL/#more">阅读全文 >></a>
-        </p>
-      
-      <div class="clearfix"></div>
-    </div>
-    
-  </div>
-  
-</article>
-
-
-
-
-
-
-
-
-
-  
-    <article id="post-12天留给济豫，我们一起长大" class="article article-type-post" itemscope="" itemprop="blogPost">
-  
-    <div class="article-meta">
-      <a href="/2018/08/05/12天留给济豫，我们一起长大/" class="article-date">
-      <time datetime="2018-08-05T13:16:36.000Z" itemprop="datePublished">2018-08-05</time>
-</a>
-
-
-    </div>
-  
-  <div class="article-inner">
-    
-      <input type="hidden" class="isFancy">
-    
-    
-      <header class="article-header">
+            <div id="article-nav-older" class="article-nav-title">
+                <a href="/2019/09/07/正则表达式/">
+                    正则表达式
+                </a>
+            </div>
         
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/08/05/12天留给济豫，我们一起长大/">12天留给济豫，我们一起长大</a>
-    </h1>
-  
+    </nav>
 
-      </header>
-      
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-          
-              <p>题记：这是我第二次暑期实践，第一次短期支教，总结这十二天的经历有太多话想说，这篇支教感想算是给这段回忆一个交代，希望以后的以后自己再读起来还能记得曾经的美好<br>
-          
-      
-    </p></div>
-    
-    <div class="article-info article-info-index">
-      
-      
-
-      
-    <div class="article-tag tagcloud">
-        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/随笔/">随笔</a></li></ul>
-    </div>
-
-      
-        <p class="article-more-link">
-          <a href="/2018/08/05/12天留给济豫，我们一起长大/#more">阅读全文 >></a>
-        </p>
-      
-      <div class="clearfix"></div>
-    </div>
-    
-  </div>
   
 </article>
 
-
-
-
-
-
-
-
-
-  
-    <article id="post-诗词格律作业汇总" class="article article-type-post" itemscope="" itemprop="blogPost">
-  
-    <div class="article-meta">
-      <a href="/2018/06/12/诗词格律作业汇总/" class="article-date">
-      <time datetime="2018-06-12T12:55:37.000Z" itemprop="datePublished">2018-06-12</time>
-</a>
-
-
-    </div>
-  
-  <div class="article-inner">
-    
-      <input type="hidden" class="isFancy">
-    
-    
-      <header class="article-header">
+    <div id="toc" class="toc-article">
+        <strong class="toc-title">文章目录</strong>
         
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/06/12/诗词格律作业汇总/">诗词格律作业</a>
-    </h1>
-  
-
-      </header>
-      
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-          
-              <h2 id="第一次作业—绝句"><a href="#第一次作业—绝句" class="headerlink" title="第一次作业—绝句"></a>第一次作业—绝句</h2><h3 id="二月初一北京初雪"><a href="#二月初一北京初雪" class="headerlink" title="二月初一北京初雪"></a>二月初一北京初雪</h3><center><br>三千雪精灵，半日帝都行。<br>略施魔法力，北京变北平。<br></center>
-          
-      
-    </div>
-    
-    <div class="article-info article-info-index">
-      
-      
-
-      
-    <div class="article-tag tagcloud">
-        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/随笔/">随笔</a></li></ul>
-    </div>
-
-      
-        <p class="article-more-link">
-          <a href="/2018/06/12/诗词格律作业汇总/#more">阅读全文 >></a>
-        </p>
-      
-      <div class="clearfix"></div>
-    </div>
-    
-  </div>
-  
-</article>
-
-
-
-
-
-
-
-
-
-  
-    <article id="post-18美赛" class="article article-type-post" itemscope="" itemprop="blogPost">
-  
-    <div class="article-meta">
-      <a href="/2018/04/22/18美赛/" class="article-date">
-      <time datetime="2018-04-22T04:10:16.000Z" itemprop="datePublished">2018-04-22</time>
-</a>
-
-
-    </div>
-  
-  <div class="article-inner">
-    
-      <input type="hidden" class="isFancy">
-    
-    
-      <header class="article-header">
+            
         
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/04/22/18美赛/">18美赛</a>
-    </h1>
-  
-
-      </header>
-      
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-          
-        <p><img src="https://raw.githubusercontent.com/Lvwh/Lvwh.github.io/master/meisai.png" alt="Honorable Mention"></p>
-
-      
     </div>
+    <style>
+        .left-col .switch-btn,
+        .left-col .switch-area {
+            display: none;
+        }
+        .toc-level-6 i,
+        .toc-level-6 ol {
+            display: none !important;
+        }
+    </style>
+
+    <input type="button" id="tocButton" value="隐藏目录" title="点击按钮隐藏或者显示文章目录">
+
+    <script>
+        yiliaConfig.toc = ["隐藏目录", "显示目录", !!"false"];
+    </script>
+
+
+
+
+
     
-    <div class="article-info article-info-index">
-      
-      
-
-      
-      
-      <div class="clearfix"></div>
-    </div>
-    
-  </div>
-  
-</article>
 
 
 
 
-
-
-
-
-
-  
-    <article id="post-Hexo设置" class="article article-type-post" itemscope="" itemprop="blogPost">
-  
-    <div class="article-meta">
-      <a href="/2018/02/09/Hexo设置/" class="article-date">
-      <time datetime="2018-02-09T13:05:04.000Z" itemprop="datePublished">2018-02-09</time>
-</a>
-
-
-    </div>
-  
-  <div class="article-inner">
-    
-      <input type="hidden" class="isFancy">
-    
-    
-      <header class="article-header">
+    <div class="scroll" id="post-nav-button">
         
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/02/09/Hexo设置/">Hexo设置</a>
-    </h1>
-  
+            <a href="/" title="回到主页"><i class="fa fa-home"></i></a>
+        
 
-      </header>
-      
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-          
-              <p><center><font size="5">个性化设置博客</font></center><br>
-          
-      
-    </p></div>
-    
-    <div class="article-info article-info-index">
-      
-      
+        <a title="文章列表"><i class="fa fa-bars"></i><i class="fa fa-times"></i></a>
 
-      
-    <div class="article-tag tagcloud">
-        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Hexo/">Hexo</a></li></ul>
+        
+            <a href="/2019/09/07/正则表达式/" title="下一篇: 正则表达式">
+                <i class="fa fa-angle-right"></i>
+            </a>
+        
     </div>
 
-      
-        <p class="article-more-link">
-          <a href="/2018/02/09/Hexo设置/#more">阅读全文 >></a>
-        </p>
-      
-      <div class="clearfix"></div>
-    </div>
-    
-  </div>
-  
-</article>
+    <ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2019/09/09/Vue/">Vue</a></li><li class="post-list-item"><a class="post-list-link" href="/2019/09/07/正则表达式/">正则表达式</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/10/16/SQL/">SQL</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/08/05/12天留给济豫，我们一起长大/">12天留给济豫，我们一起长大</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/06/12/诗词格律作业汇总/">诗词格律作业</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/04/22/18美赛/">18美赛</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/02/09/Hexo设置/">Hexo设置</a></li></ul>
 
 
 
 
-
-
-
-
-
-  
-  
+    <script>
+        
+    </script>
 </div>
       <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
 
