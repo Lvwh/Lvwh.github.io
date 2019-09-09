@@ -15,18 +15,18 @@
 
 
 
-<meta name="description" content="元字符  位置   ^   开头  $  结尾  \b  开始或结尾  字符  .  除换行符外任意字符  \w  字母/数字/汉字/下划线  \s  空白字符(空格/换行符/制表符)  \d  数字  字符类  [aeiou]  集合中的任意字符  [^aeiou]  集合以外的字符  [0-9a-zA-Z_]  等价于\w  限定符  {n}  重复n次  {m,n}  重复至少m次，至多n">
+<meta name="description" content="何为Vue.js 如果不使用框架，项目最终会成为一团不可维护的代码,Vue.js（简称Vue）就是一套用于构建用户界面的JavaScript框架。关于Vue的作者尤雨溪(Evan You)有一篇采访   参考资料: [1] 麦克雷, 宋鹏, 刘鹏辉, &amp;amp; 张海雷. (2018). Vue.js快跑:构建触手可及的高性能Web应用 北京: 电子工业出版社. [2] 刘博文. (2019).">
 <meta name="keywords" content="计算机">
 <meta property="og:type" content="article">
-<meta property="og:title" content="正则表达式">
-<meta property="og:url" content="http://yoursite.com/2019/09/07/正则表达式/index.html">
+<meta property="og:title" content="Vue">
+<meta property="og:url" content="http://yoursite.com/2019/09/07/Vue/index.html">
 <meta property="og:site_name" content="吕文昊的博客">
-<meta property="og:description" content="元字符  位置   ^   开头  $  结尾  \b  开始或结尾  字符  .  除换行符外任意字符  \w  字母/数字/汉字/下划线  \s  空白字符(空格/换行符/制表符)  \d  数字  字符类  [aeiou]  集合中的任意字符  [^aeiou]  集合以外的字符  [0-9a-zA-Z_]  等价于\w  限定符  {n}  重复n次  {m,n}  重复至少m次，至多n">
+<meta property="og:description" content="何为Vue.js 如果不使用框架，项目最终会成为一团不可维护的代码,Vue.js（简称Vue）就是一套用于构建用户界面的JavaScript框架。关于Vue的作者尤雨溪(Evan You)有一篇采访   参考资料: [1] 麦克雷, 宋鹏, 刘鹏辉, &amp;amp; 张海雷. (2018). Vue.js快跑:构建触手可及的高性能Web应用 北京: 电子工业出版社. [2] 刘博文. (2019).">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-09-08T10:20:59.000Z">
+<meta property="og:updated_time" content="2019-09-09T13:46:09.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="正则表达式">
-<meta name="twitter:description" content="元字符  位置   ^   开头  $  结尾  \b  开始或结尾  字符  .  除换行符外任意字符  \w  字母/数字/汉字/下划线  \s  空白字符(空格/换行符/制表符)  \d  数字  字符类  [aeiou]  集合中的任意字符  [^aeiou]  集合以外的字符  [0-9a-zA-Z_]  等价于\w  限定符  {n}  重复n次  {m,n}  重复至少m次，至多n">
+<meta name="twitter:title" content="Vue">
+<meta name="twitter:description" content="何为Vue.js 如果不使用框架，项目最终会成为一团不可维护的代码,Vue.js（简称Vue）就是一套用于构建用户界面的JavaScript框架。关于Vue的作者尤雨溪(Evan You)有一篇采访   参考资料: [1] 麦克雷, 宋鹏, 刘鹏辉, &amp;amp; 张海雷. (2018). Vue.js快跑:构建触手可及的高性能Web应用 北京: 电子工业出版社. [2] 刘博文. (2019).">
 
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 
@@ -58,7 +58,7 @@
 <link href="//cdn.bootcss.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
 
 
-<title>正则表达式 | 吕文昊的博客</title>
+<title>Vue | 吕文昊的博客</title>
 
 <script src="//cdn.bootcss.com/jquery/2.2.4/jquery.min.js"></script>
 <script src="//cdn.bootcss.com/clipboard.js/1.5.10/clipboard.min.js"></script>
@@ -227,11 +227,11 @@
     </div>
     <link class="menu-list" tags="标签" friends="友情链接" about="关于我">
 </nav>
-      <div class="body-wrap"><article id="post-正则表达式" class="article article-type-post" itemscope="" itemprop="blogPost">
+      <div class="body-wrap"><article id="post-Vue" class="article article-type-post" itemscope="" itemprop="blogPost">
   
     <div class="article-meta">
-      <a href="/2019/09/07/正则表达式/" class="article-date">
-      <time datetime="2019-09-07T08:52:07.000Z" itemprop="datePublished">2019-09-07</time>
+      <a href="/2019/09/07/Vue/" class="article-date">
+      <time datetime="2019-09-07T10:12:23.000Z" itemprop="datePublished">2019-09-07</time>
 </a>
 
 
@@ -246,7 +246,7 @@
         
   
     <h1 class="article-title" itemprop="name">
-      正则表达式
+      Vue
     </h1>
   
 
@@ -267,10 +267,16 @@
     <div class="article-entry" itemprop="articleBody">
       
           
-        <table><tr><td rowspan="7" width="10%"> 元字符 </td><td rowspan="3" width="5%"> 位置 </td><td>  ^ </td><td>  开头 </td></tr><tr><td> $ </td><td> 结尾 </td></tr><tr><td> \b </td><td> 开始或结尾 </td></tr><tr><td rowspan="4" width="5%"> 字符 </td><td> . </td><td> 除换行符外任意字符 </td></tr><tr><td> \w </td><td> 字母/数字/汉字/下划线 </td></tr><tr><td> \s </td><td> 空白字符(空格/换行符/制表符) </td></tr><tr><td> \d </td><td> 数字 </td></tr><tr><td rowspan="3" colspan="2"> 字符类 </td><td> [aeiou] </td><td> 集合中的任意字符 </td></tr><tr><td> [^aeiou] </td><td> 集合以外的字符 </td></tr><tr><td> [0-9a-zA-Z_] </td><td> 等价于\w </td></tr><tr><td rowspan="5" colspan="2"> 限定符 </td><td> {n} </td><td> 重复n次 </td></tr><tr><td> {m,n} </td><td> 重复至少m次，至多n次 </td></tr><tr><td> * </td><td> 重复至少0次 </td></tr><tr><td> + </td><td> 重复至少1次 </td></tr><tr><td> ？ </td><td> 重复0次或1次 </td></tr><tr><td colspan="2"> 替换 </td><td> 规则1|规则2 </td><td> 匹配了规则1或规则2 </td></tr></table>
-<table><tr><td rowspan="2">身份证号码验证</td><td colspan="7">^\d{6}((19)|(20))\d{2}((0\d)|(1[0-2]))(([0-2]\d)|(3[01]))\d{3}(\d|X)$ </td></tr><tr><td>6位地址码</td><td width="11%">19/20</td><td width="11%">任意2位数字</td><td width="10.5%">01~12</td><td width="10.5%">01~31</td><td width="11%">任意3位数字</td><td>数字或X</td></tr><tr><td>手机号码验证</td><td colspan="7"> </td></tr><tr><td>邮箱验证</td><td colspan="7"> </td></tr><tr><td>日期验证</td><td colspan="7"> </td></tr></table>
+        <h2 id="何为vuejs"><a class="markdownIt-Anchor" href="#何为vuejs"></a> 何为Vue.js</h2>
+<p>如果不使用框架，项目最终会成为一团不可维护的代码,Vue.js（简称Vue）就是一套用于构建用户界面的JavaScript框架。关于Vue的作者尤雨溪(Evan You)有一篇采访</p>
 <blockquote>
-<p><font size="3" face="宋体"> 参考资料: 王蕾. (2014). 神奇的匹配：正则表达式求精之旅. 北京: 电子工业出版社. </font></p>
+<p><font size="3" face="宋体"> 参考资料:<br>
+[1] 麦克雷, 宋鹏, 刘鹏辉, &amp; 张海雷. (2018). Vue.js快跑:构建触手可及的高性能Web应用 北京: 电子工业出版社.<br>
+[2] 刘博文. (2019). 深入浅出Vue.js. 北京: 人民邮电出版社.<br>
+</font></p>
+<blockquote>
+<p><font size="3" face="宋体"> 其中《深入浅出Vue.js》的作者刘博文是位95后，完成该书时仅有23岁，他对前端技术的理解让人钦佩，同时也让同为95后的我感到惭愧。</font></p>
+</blockquote>
 </blockquote>
 
       
@@ -283,16 +289,10 @@
 
     <nav id="article-nav">
         
-            <div id="article-nav-newer" class="article-nav-title">
-                <a href="/2019/09/09/Vue/">
-                    Vue
-                </a>
-            </div>
-        
         
             <div id="article-nav-older" class="article-nav-title">
-                <a href="/2018/10/16/SQL/">
-                    SQL
+                <a href="/2019/07/06/正则表达式/">
+                    正则表达式
                 </a>
             </div>
         
@@ -304,7 +304,7 @@
     <div id="toc" class="toc-article">
         <strong class="toc-title">文章目录</strong>
         
-            
+            <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#何为vuejs"><span class="toc-number">1.</span> <span class="toc-text"> 何为Vue.js</span></a></li></ol>
         
     </div>
     <style>
@@ -335,21 +335,19 @@
 
     <div class="scroll" id="post-nav-button">
         
-            <a href="/2019/09/09/Vue/" title="上一篇: Vue">
-                <i class="fa fa-angle-left"></i>
-            </a>
+            <a href="/" title="回到主页"><i class="fa fa-home"></i></a>
         
 
         <a title="文章列表"><i class="fa fa-bars"></i><i class="fa fa-times"></i></a>
 
         
-            <a href="/2018/10/16/SQL/" title="下一篇: SQL">
+            <a href="/2019/07/06/正则表达式/" title="下一篇: 正则表达式">
                 <i class="fa fa-angle-right"></i>
             </a>
         
     </div>
 
-    <ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2019/09/09/Vue/">Vue</a></li><li class="post-list-item"><a class="post-list-link" href="/2019/09/07/正则表达式/">正则表达式</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/10/16/SQL/">SQL</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/08/05/12天留给济豫，我们一起长大/">12天留给济豫，我们一起长大</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/06/12/诗词格律作业汇总/">诗词格律作业</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/04/22/18美赛/">18美赛</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/02/09/Hexo设置/">Hexo设置</a></li></ul>
+    <ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2019/09/07/Vue/">Vue</a></li><li class="post-list-item"><a class="post-list-link" href="/2019/07/06/正则表达式/">正则表达式</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/10/16/SQL/">SQL</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/08/05/12天留给济豫，我们一起长大/">12天留给济豫，我们一起长大</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/06/12/诗词格律作业汇总/">诗词格律作业</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/04/22/18美赛/">18美赛</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/02/09/Hexo设置/">Hexo设置</a></li></ul>
 
 
 
