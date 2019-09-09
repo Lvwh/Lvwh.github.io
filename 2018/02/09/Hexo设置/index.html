@@ -91,11 +91,6 @@
 
 
 
-
-
-<link href="https://cdn.bootcss.com/KaTeX/0.7.1/katex.min.css" rel="stylesheet">
-
-
 </head></html>
 <body>
   <div id="container">
@@ -267,19 +262,44 @@
     <div class="article-entry" itemprop="articleBody">
       
           
-        <p><center><font size="5">个性化设置博客</font></center><br><a id="more"></a></p>
-<h2 id="首页文章截断显示"><a href="#首页文章截断显示" class="headerlink" title="首页文章截断显示"></a>首页文章截断显示</h2><p>&lt; !--more-- &gt;</p>
-<h2 id="live2d模型"><a href="#live2d模型" class="headerlink" title="live2d模型"></a>live2d模型</h2><p><code>blog/_config.yml</code><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">live2d:</span><br><span class="line">  enable: true</span><br><span class="line">  scriptFrom: local</span><br><span class="line">  pluginRootPath: live2dw/</span><br><span class="line">  pluginJsPath: lib/</span><br><span class="line">  pluginModelPath: assets/</span><br><span class="line">  tagMode: false</span><br><span class="line">  debug: false</span><br><span class="line">  model:</span><br><span class="line">    use: live2d-widget-model-模型名</span><br><span class="line">  display:</span><br><span class="line">    position: right</span><br><span class="line">    width: 150</span><br><span class="line">    height: 300</span><br><span class="line">  mobile:</span><br><span class="line">    show: true</span><br></pre></td></tr></table></figure></p>
-<p>下载模型<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install live2d-widget-model-模型名</span><br></pre></td></tr></table></figure></p>
-<p>复制<code>blog/node_modeles</code>中<code>live2d-widget-model-模型名</code>到<code>blog/live2d_models</code><br><code>hijiki</code> 黑猫<br><code>tororo</code> 白猫</p>
-<h2 id="更换主题"><a href="#更换主题" class="headerlink" title="更换主题"></a>更换主题</h2><h3 id="yelee"><a href="#yelee" class="headerlink" title="yelee"></a>yelee</h3><p><code>git clone https://github.com/MOxFIVE/hexo-theme-yelee.git themes/yelee</code><br>出现<code>error: RPC failed; curl 18 transfer closed with outstanding read data remaining</code>解决办法：<code>git config --global http.postBuffer 524288000</code></p>
-<h2 id="Next主题"><a href="#Next主题" class="headerlink" title="Next主题"></a>Next主题</h2><h3 id="头部"><a href="#头部" class="headerlink" title="头部"></a>头部</h3><p><code>themes/next/_config.yml avatar</code> 设置头像图片名<br><code>themes/next/source/images</code> 头像图片存储</p>
-<h3 id="底部"><a href="#底部" class="headerlink" title="底部"></a>底部</h3><h4 id="图标"><a href="#图标" class="headerlink" title="图标"></a>图标</h4><p><code>themes/next/_config.yml</code>  icon:<br>图标内容来自Font Awesome</p>
-<h3 id="顶部"><a href="#顶部" class="headerlink" title="顶部"></a>顶部</h3><h4 id="黑线"><a href="#黑线" class="headerlink" title="黑线"></a>黑线</h4><p><code>themes/next/source/css/_common/components/header/headerband.styl</code><br><code>background: $headband-bg;</code></p>
-<h3 id="页面颜色、位置等设置"><a href="#页面颜色、位置等设置" class="headerlink" title="页面颜色、位置等设置"></a>页面颜色、位置等设置</h3><p><code>themes/next/source/css/_custom/custom.styl</code><br>参考 <a href="https://reuixiy.github.io/technology/computer/computer-aided-art/2017/06/09/hexo-next-optimization.html" target="_blank" rel="noopener">reuixiy.github.io</a></p>
-<h3 id="页面宽度"><a href="#页面宽度" class="headerlink" title="页面宽度"></a>页面宽度</h3><p><code>themes/next/source/css/_schemes/Picses/layout.styl</code><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">header&#123; width: 百分比 !important; &#125;</span><br><span class="line">header.post-header &#123;</span><br><span class="line">  width: auto !important;</span><br><span class="line">&#125;</span><br><span class="line">.container .main-inner &#123; width: 百分比; &#125;</span><br><span class="line">.content-wrap &#123; width: calc(100% - 260px); &#125;</span><br></pre></td></tr></table></figure></p>
-<h3 id="简介栏文本颜色设置"><a href="#简介栏文本颜色设置" class="headerlink" title="简介栏文本颜色设置"></a>简介栏文本颜色设置</h3><p><code>themes/next/source/css/_variables/Pisces.styl</code></p>
-<h2 id="Yelee主题"><a href="#Yelee主题" class="headerlink" title="Yelee主题"></a>Yelee主题</h2>
+        <center><font size="5">个性化设置博客</font></center>
+<a id="more"></a>
+## 首页文章截断显示
+< !-\-more-\- >
+## live2d模型
+`blog/_config.yml`
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">live2d:</span><br><span class="line">  enable: true</span><br><span class="line">  scriptFrom: local</span><br><span class="line">  pluginRootPath: live2dw/</span><br><span class="line">  pluginJsPath: lib/</span><br><span class="line">  pluginModelPath: assets/</span><br><span class="line">  tagMode: false</span><br><span class="line">  debug: false</span><br><span class="line">  model:</span><br><span class="line">    use: live2d-widget-model-模型名</span><br><span class="line">  display:</span><br><span class="line">    position: right</span><br><span class="line">    width: 150</span><br><span class="line">    height: 300</span><br><span class="line">  mobile:</span><br><span class="line">    show: true</span><br></pre></td></tr></table></figure>
+<p>下载模型</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install live2d-widget-model-模型名</span><br></pre></td></tr></table></figure>
+<p>复制<code>blog/node_modeles</code>中<code>live2d-widget-model-模型名</code>到<code>blog/live2d_models</code><br>
+<code>hijiki</code> 黑猫<br>
+<code>tororo</code> 白猫</p>
+<h2 id="更换主题"><a class="markdownIt-Anchor" href="#更换主题"></a> 更换主题</h2>
+<h3 id="yelee"><a class="markdownIt-Anchor" href="#yelee"></a> yelee</h3>
+<p><code>git clone https://github.com/MOxFIVE/hexo-theme-yelee.git themes/yelee</code><br>
+出现<code>error: RPC failed; curl 18 transfer closed with outstanding read data remaining</code>解决办法：<code>git config --global http.postBuffer 524288000</code></p>
+<h2 id="next主题"><a class="markdownIt-Anchor" href="#next主题"></a> Next主题</h2>
+<h3 id="头部"><a class="markdownIt-Anchor" href="#头部"></a> 头部</h3>
+<p><code>themes/next/_config.yml avatar</code> 设置头像图片名<br>
+<code>themes/next/source/images</code> 头像图片存储</p>
+<h3 id="底部"><a class="markdownIt-Anchor" href="#底部"></a> 底部</h3>
+<h4 id="图标"><a class="markdownIt-Anchor" href="#图标"></a> 图标</h4>
+<p><code>themes/next/_config.yml</code>  icon:<br>
+图标内容来自Font Awesome</p>
+<h3 id="顶部"><a class="markdownIt-Anchor" href="#顶部"></a> 顶部</h3>
+<h4 id="黑线"><a class="markdownIt-Anchor" href="#黑线"></a> 黑线</h4>
+<p><code>themes/next/source/css/_common/components/header/headerband.styl</code><br>
+<code>background: $headband-bg;</code></p>
+<h3 id="页面颜色-位置等设置"><a class="markdownIt-Anchor" href="#页面颜色-位置等设置"></a> 页面颜色、位置等设置</h3>
+<p><code>themes/next/source/css/_custom/custom.styl</code><br>
+参考 <a href="https://reuixiy.github.io/technology/computer/computer-aided-art/2017/06/09/hexo-next-optimization.html" target="_blank" rel="noopener">reuixiy.github.io</a></p>
+<h3 id="页面宽度"><a class="markdownIt-Anchor" href="#页面宽度"></a> 页面宽度</h3>
+<p><code>themes/next/source/css/_schemes/Picses/layout.styl</code></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">header&#123; width: 百分比 !important; &#125;</span><br><span class="line">header.post-header &#123;</span><br><span class="line">  width: auto !important;</span><br><span class="line">&#125;</span><br><span class="line">.container .main-inner &#123; width: 百分比; &#125;</span><br><span class="line">.content-wrap &#123; width: calc(100% - 260px); &#125;</span><br></pre></td></tr></table></figure>
+<h3 id="简介栏文本颜色设置"><a class="markdownIt-Anchor" href="#简介栏文本颜色设置"></a> 简介栏文本颜色设置</h3>
+<p><code>themes/next/source/css/_variables/Pisces.styl</code></p>
+<h2 id="yelee主题"><a class="markdownIt-Anchor" href="#yelee主题"></a> Yelee主题</h2>
+
       
     </div>
     
@@ -305,7 +325,7 @@
     <div id="toc" class="toc-article">
         <strong class="toc-title">文章目录</strong>
         
-            <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#首页文章截断显示"><span class="toc-number">1.</span> <span class="toc-text">首页文章截断显示</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#live2d模型"><span class="toc-number">2.</span> <span class="toc-text">live2d模型</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#更换主题"><span class="toc-number">3.</span> <span class="toc-text">更换主题</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#yelee"><span class="toc-number">3.1.</span> <span class="toc-text">yelee</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Next主题"><span class="toc-number">4.</span> <span class="toc-text">Next主题</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#头部"><span class="toc-number">4.1.</span> <span class="toc-text">头部</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#底部"><span class="toc-number">4.2.</span> <span class="toc-text">底部</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#图标"><span class="toc-number">4.2.1.</span> <span class="toc-text">图标</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#顶部"><span class="toc-number">4.3.</span> <span class="toc-text">顶部</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#黑线"><span class="toc-number">4.3.1.</span> <span class="toc-text">黑线</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#页面颜色、位置等设置"><span class="toc-number">4.4.</span> <span class="toc-text">页面颜色、位置等设置</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#页面宽度"><span class="toc-number">4.5.</span> <span class="toc-text">页面宽度</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#简介栏文本颜色设置"><span class="toc-number">4.6.</span> <span class="toc-text">简介栏文本颜色设置</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Yelee主题"><span class="toc-number">5.</span> <span class="toc-text">Yelee主题</span></a></li></ol>
+            <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#更换主题"><span class="toc-number">1.</span> <span class="toc-text"> 更换主题</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#yelee"><span class="toc-number">1.1.</span> <span class="toc-text"> yelee</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#next主题"><span class="toc-number">2.</span> <span class="toc-text"> Next主题</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#头部"><span class="toc-number">2.1.</span> <span class="toc-text"> 头部</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#底部"><span class="toc-number">2.2.</span> <span class="toc-text"> 底部</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#图标"><span class="toc-number">2.2.1.</span> <span class="toc-text"> 图标</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#顶部"><span class="toc-number">2.3.</span> <span class="toc-text"> 顶部</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#黑线"><span class="toc-number">2.3.1.</span> <span class="toc-text"> 黑线</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#页面颜色-位置等设置"><span class="toc-number">2.4.</span> <span class="toc-text"> 页面颜色、位置等设置</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#页面宽度"><span class="toc-number">2.5.</span> <span class="toc-text"> 页面宽度</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#简介栏文本颜色设置"><span class="toc-number">2.6.</span> <span class="toc-text"> 简介栏文本颜色设置</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#yelee主题"><span class="toc-number">3.</span> <span class="toc-text"> Yelee主题</span></a></li></ol>
         
     </div>
     <style>
