@@ -262,11 +262,11 @@
       
           
         <h2 id="何为vuejs"><a class="markdownIt-Anchor" href="#何为vuejs"></a> 何为Vue.js</h2>
-<p>如果不使用框架，项目最终会成为一团不可维护的代码,Vue.js（简称Vue）就是一套用于构建用户界面的JavaScript框架。关于Vue的作者尤雨溪(Evan You)有一篇采访</p>
+<p>如果不使用框架，项目最终会成为一团不可维护的代码,Vue.js（简称Vue）就是一套用于构建用户界面的JavaScript框架。关于Vue的creator尤雨溪（Evan You）我找到了一篇<a href="https://www.freecodecamp.org/news/between-the-wires-an-interview-with-vue-js-creator-evan-you-e383cbf57cc4/" target="_blank" rel="noopener">采访</a>。</p>
 <blockquote>
 <p><font size="3" face="宋体"> 参考资料:<br>
-[1] 麦克雷, 宋鹏, 刘鹏辉, &amp; 张海雷. (2018). Vue.js快跑:构建触手可及的高性能Web应用 北京: 电子工业出版社.<br>
-[2] 刘博文. (2019). 深入浅出Vue.js. 北京: 人民邮电出版社.<br>
+[1] <a href="https://bnu-primo.hosted.exlibrisgroup.com/primo-explore/fulldisplay?docid=86BNU_ALMA_CN21348554530003961&amp;context=L&amp;vid=86BNU&amp;lang=zh_CN&amp;search_scope=default_scope&amp;adaptor=Local%20Search%20Engine&amp;tab=default_tab&amp;query=any,contains,vue%E5%BF%AB%E8%B7%91&amp;offset=0" target="_blank" rel="noopener">麦克雷, 宋鹏, 刘鹏辉, &amp; 张海雷. (2018). Vue.js快跑:构建触手可及的高性能Web应用 北京: 电子工业出版社.</a><br>
+[2] <a href="https://bnu-primo.hosted.exlibrisgroup.com/primo-explore/fulldisplay?docid=86BNU_ALMA_CN21349127730003961&amp;context=L&amp;vid=86BNU&amp;lang=zh_CN&amp;search_scope=default_scope&amp;adaptor=Local%20Search%20Engine&amp;tab=default_tab&amp;query=any,contains,%E6%B7%B1%E5%85%A5%E6%B5%85%E5%87%BAvue&amp;offset=0" target="_blank" rel="noopener">刘博文. (2019). 深入浅出Vue.js. 北京: 人民邮电出版社.</a><br>
 </font></p>
 <blockquote>
 <p><font size="3" face="宋体"> 其中《深入浅出Vue.js》的作者刘博文是位95后，完成该书时仅有23岁，他对前端技术的理解让人钦佩，同时也让同为95后的我感到惭愧。</font></p>
@@ -331,12 +331,8 @@
     <div class="article-entry" itemprop="articleBody">
       
           
-        <table><tr><td rowspan="7" width="10%"> 元字符 </td><td rowspan="3" width="5%"> 位置 </td><td>  ^ </td><td>  开头 </td></tr><tr><td> $ </td><td> 结尾 </td></tr><tr><td> \b </td><td> 开始或结尾 </td></tr><tr><td rowspan="4" width="5%"> 字符 </td><td> . </td><td> 除换行符外任意字符 </td></tr><tr><td> \w </td><td> 字母/数字/汉字/下划线 </td></tr><tr><td> \s </td><td> 空白字符(空格/换行符/制表符) </td></tr><tr><td> \d </td><td> 数字 </td></tr><tr><td rowspan="3" colspan="2"> 字符类 </td><td> [aeiou] </td><td> 集合中的任意字符 </td></tr><tr><td> [^aeiou] </td><td> 集合以外的字符 </td></tr><tr><td> [0-9a-zA-Z_] </td><td> 等价于\w </td></tr><tr><td rowspan="5" colspan="2"> 限定符 </td><td> {n} </td><td> 重复n次 </td></tr><tr><td> {m,n} </td><td> 重复至少m次，至多n次 </td></tr><tr><td> * </td><td> 重复至少0次 </td></tr><tr><td> + </td><td> 重复至少1次 </td></tr><tr><td> ？ </td><td> 重复0次或1次 </td></tr><tr><td colspan="2"> 替换 </td><td> 规则1|规则2 </td><td> 匹配了规则1或规则2 </td></tr></table>
-<table><tr><td rowspan="2">身份证号码验证</td><td colspan="7">^\d{6}((19)|(20))\d{2}((0\d)|(1[0-2]))(([0-2]\d)|(3[01]))\d{3}(\d|X)$ </td></tr><tr><td>6位地址码</td><td width="11%">19/20</td><td width="11%">任意2位数字</td><td width="10.5%">01~12</td><td width="10.5%">01~31</td><td width="11%">任意3位数字</td><td>数字或X</td></tr><tr><td>手机号码验证</td><td colspan="7"> </td></tr><tr><td>邮箱验证</td><td colspan="7"> </td></tr><tr><td>日期验证</td><td colspan="7"> </td></tr></table>
-<blockquote>
-<p><font size="3" face="宋体"> 参考资料: 王蕾. (2014). 神奇的匹配：正则表达式求精之旅. 北京: 电子工业出版社. </font></p>
-</blockquote>
-
+              <table><tr><td rowspan="7" width="10%"> 元字符 </td><td rowspan="3" width="5%"> 位置 </td><td>  ^ </td><td>  开头 </td></tr><tr><td> $ </td><td> 结尾 </td></tr><tr><td> \b </td><td> 开始或结尾 </td></tr><tr><td rowspan="4" width="5%"> 字符 </td><td> . </td><td> 除换行符外任意字符 </td></tr><tr><td> \w </td><td> 字母/数字/汉字/下划线 </td></tr><tr><td> \s </td><td> 空白字符(空格/换行符/制表符) </td></tr><tr><td> \d </td><td> 数字 </td></tr><tr><td rowspan="3" colspan="2"> 字符类 </td><td> [aeiou] </td><td> 集合中的任意字符 </td></tr><tr><td> [^aeiou] </td><td> 集合以外的字符 </td></tr><tr><td> [0-9a-zA-Z_] </td><td> 等价于\w </td></tr><tr><td rowspan="5" colspan="2"> 限定符 </td><td> {n} </td><td> 重复n次 </td></tr><tr><td> {m,n} </td><td> 重复至少m次，至多n次 </td></tr><tr><td> * </td><td> 重复至少0次 </td></tr><tr><td> + </td><td> 重复至少1次 </td></tr><tr><td> ？ </td><td> 重复0次或1次 </td></tr><tr><td colspan="2"> 替换 </td><td> 规则1|规则2 </td><td> 匹配了规则1或规则2 </td></tr></table>
+          
       
     </div>
     
@@ -349,6 +345,10 @@
         <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/计算机/">计算机</a></li></ul>
     </div>
 
+      
+        <p class="article-more-link">
+          <a href="/2019/07/06/正则表达式/#more">阅读全文 >></a>
+        </p>
       
       <div class="clearfix"></div>
     </div>
