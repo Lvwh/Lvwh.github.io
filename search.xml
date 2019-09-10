@@ -3,7 +3,7 @@
   <entry>
     <title><![CDATA[Vue]]></title>
     <url>%2F2019%2F09%2F07%2FVue%2F</url>
-    <content type="text"><![CDATA[何为Vue.js 如果不使用框架，项目最终会成为一团不可维护的代码,Vue.js（简称Vue）就是一套用于构建用户界面的JavaScript框架。关于Vue的creator尤雨溪（Evan You）我找到了一篇采访。 参考资料: [1] 麦克雷, 宋鹏, 刘鹏辉, &amp; 张海雷. (2018). Vue.js快跑:构建触手可及的高性能Web应用 北京: 电子工业出版社. [2] 刘博文. (2019). 深入浅出Vue.js. 北京: 人民邮电出版社. 其中《深入浅出Vue.js》的作者刘博文是位95后，完成该书时仅有23岁，他对前端技术的理解让人钦佩，同时也让同为95后的我感到惭愧。]]></content>
+    <content type="text"><![CDATA[何为Vue.js 如果不使用框架，项目最终会成为一团不可维护的代码,Vue.js（简称Vue）就是一套用于构建用户界面的JavaScript框架。关于Vue的creator尤雨溪（Evan You）我找到了一篇采访。 参考资料: [1] 麦克雷, 宋鹏, 刘鹏辉, &amp; 张海雷. (2018). Vue.js快跑:构建触手可及的高性能Web应用 北京: 电子工业出版社. [2] 刘博文. (2019). 深入浅出Vue.js. 北京: 人民邮电出版社. [3] cn.vuejs.org 其中《深入浅出Vue.js》的作者刘博文是位95后，完成该书时仅有23岁，他对前端技术的理解让人钦佩，同时也让同为95后的我感到惭愧。]]></content>
       <tags>
         <tag>计算机</tag>
       </tags>
