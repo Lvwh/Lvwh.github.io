@@ -15,16 +15,18 @@
 
 
 
-<meta name="description" content="静水流深">
-<meta property="og:type" content="website">
-<meta property="og:title" content="吕文昊的博客">
-<meta property="og:url" content="http://yoursite.com/archives/2018/08/index.html">
+<meta name="description" content="合并PDF 12345678\documentclass[a4paper]&amp;#123;article&amp;#125;\usepackage&amp;#123;pdfpages&amp;#125;\begin&amp;#123;document&amp;#125;\includepdfmerge&amp;#123;NAME1.pdf,1-3&amp;#125;\includepdfmerge&amp;#123;NAME2.pdf,6-18&amp;#125;\en">
+<meta name="keywords" content="计算机,Latex">
+<meta property="og:type" content="article">
+<meta property="og:title" content="妙用Latex">
+<meta property="og:url" content="http://yoursite.com/2020/04/21/Latex相关/index.html">
 <meta property="og:site_name" content="吕文昊的博客">
-<meta property="og:description" content="静水流深">
+<meta property="og:description" content="合并PDF 12345678\documentclass[a4paper]&amp;#123;article&amp;#125;\usepackage&amp;#123;pdfpages&amp;#125;\begin&amp;#123;document&amp;#125;\includepdfmerge&amp;#123;NAME1.pdf,1-3&amp;#125;\includepdfmerge&amp;#123;NAME2.pdf,6-18&amp;#125;\en">
 <meta property="og:locale" content="zh-Hans">
+<meta property="og:updated_time" content="2020-04-21T03:28:46.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="吕文昊的博客">
-<meta name="twitter:description" content="静水流深">
+<meta name="twitter:title" content="妙用Latex">
+<meta name="twitter:description" content="合并PDF 12345678\documentclass[a4paper]&amp;#123;article&amp;#125;\usepackage&amp;#123;pdfpages&amp;#125;\begin&amp;#123;document&amp;#125;\includepdfmerge&amp;#123;NAME1.pdf,1-3&amp;#125;\includepdfmerge&amp;#123;NAME2.pdf,6-18&amp;#125;\en">
 
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 
@@ -56,7 +58,7 @@
 <link href="//cdn.bootcss.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
 
 
-<title>Archives: 2018/8 | 吕文昊的博客</title>
+<title>妙用Latex | 吕文昊的博客</title>
 
 <script src="//cdn.bootcss.com/jquery/2.2.4/jquery.min.js"></script>
 <script src="//cdn.bootcss.com/clipboard.js/1.5.10/clipboard.min.js"></script>
@@ -66,8 +68,8 @@
         fancybox: true,
         animate: true,
         isHome: false,
-        isPost: false,
-        isArchive: true,
+        isPost: true,
+        isArchive: false,
         isTag: false,
         isCategory: false,
         fancybox_js: "//cdn.bootcss.com/fancybox/2.1.5/jquery.fancybox.min.js",
@@ -225,56 +227,130 @@
     </div>
     <link class="menu-list" tags="标签" friends="友情链接" about="关于我">
 </nav>
-      <div class="body-wrap">
+      <div class="body-wrap"><article id="post-Latex相关" class="article article-type-post" itemscope="" itemprop="blogPost">
   
-  
-    
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2018" class="archive-year">2018</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-          <div class="article-meta">
-              <a href="/2018/08/05/12天留给济豫，我们一起长大/" class="archive-article-date">
-      <time datetime="2018-08-05T13:16:36.000Z" itemprop="datePublished">08-05</time>
+    <div class="article-meta">
+      <a href="/2020/04/21/Latex相关/" class="article-date">
+      <time datetime="2020-04-21T03:18:25.000Z" itemprop="datePublished">2020-04-21</time>
 </a>
 
 
-        </div>
-         
+    </div>
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/08/05/12天留给济豫，我们一起长大/">12天留给济豫，我们一起长大</a>
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      妙用Latex
     </h1>
   
 
-        <div class="article-info info-on-archive">
-          
+      </header>
+      
+      <div class="article-info article-info-post">
+        
 
-          
+        
     <div class="article-tag tagcloud">
-        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/随笔/">随笔</a></li></ul>
+        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Latex/">Latex</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/计算机/">计算机</a></li></ul>
     </div>
 
-        </div>
         <div class="clearfix"></div>
-    </header>
+      </div>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+          
+        <h2 id="合并pdf"><a class="markdownIt-Anchor" href="#合并pdf"></a> 合并PDF</h2>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">\documentclass[a4paper]&#123;article&#125;</span><br><span class="line">\usepackage&#123;pdfpages&#125;</span><br><span class="line">\begin&#123;document&#125;</span><br><span class="line"></span><br><span class="line">\includepdfmerge&#123;NAME1.pdf,1-3&#125;</span><br><span class="line">\includepdfmerge&#123;NAME2.pdf,6-18&#125;</span><br><span class="line"></span><br><span class="line">\end&#123;document&#125;</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>注：用pdflatex编译</p>
+</blockquote>
+<h2 id="简历"><a class="markdownIt-Anchor" href="#简历"></a> 简历</h2>
+<p><a href="https://github.com/dyweb/awesome-resume-for-chinese" target="_blank" rel="noopener">https://github.com/dyweb/awesome-resume-for-chinese</a></p>
+<a id="more"></a>
+      
+    </div>
+    
   </div>
+  
+    
+
+
+    <nav id="article-nav">
+        
+        
+            <div id="article-nav-older" class="article-nav-title">
+                <a href="/2020/01/11/Python/">
+                    Python
+                </a>
+            </div>
+        
+    </nav>
+
+  
 </article>
-  
-  
-    </div></section>
-  
+
+    <div id="toc" class="toc-article">
+        <strong class="toc-title">文章目录</strong>
+        
+            <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#合并pdf"><span class="toc-number">1.</span> <span class="toc-text"> 合并PDF</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#简历"><span class="toc-number">2.</span> <span class="toc-text"> 简历</span></a></li></ol>
+        
+    </div>
+    <style>
+        .left-col .switch-btn,
+        .left-col .switch-area {
+            display: none;
+        }
+        .toc-level-6 i,
+        .toc-level-6 ol {
+            display: none !important;
+        }
+    </style>
+
+    <input type="button" id="tocButton" value="隐藏目录" title="点击按钮隐藏或者显示文章目录">
+
+    <script>
+        yiliaConfig.toc = ["隐藏目录", "显示目录", !!"false"];
+    </script>
+
+
+
+
 
     
 
+
+
+
+    <div class="scroll" id="post-nav-button">
+        
+            <a href="/" title="回到主页"><i class="fa fa-home"></i></a>
+        
+
+        <a title="文章列表"><i class="fa fa-bars"></i><i class="fa fa-times"></i></a>
+
+        
+            <a href="/2020/01/11/Python/" title="下一篇: Python">
+                <i class="fa fa-angle-right"></i>
+            </a>
+        
+    </div>
+
+    <ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2020/04/21/Latex相关/">妙用Latex</a></li><li class="post-list-item"><a class="post-list-link" href="/2020/01/11/Python/">Python</a></li><li class="post-list-item"><a class="post-list-link" href="/2019/09/07/Vue/">Vue</a></li><li class="post-list-item"><a class="post-list-link" href="/2019/07/06/正则表达式/">正则表达式</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/10/16/SQL/">SQL</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/08/05/12天留给济豫，我们一起长大/">12天留给济豫，我们一起长大</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/06/12/诗词格律作业汇总/">诗词格律作业</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/04/22/18美赛/">18美赛</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/02/09/Hexo设置/">Hexo设置</a></li></ul>
+
+
+
+
+    <script>
+        
+    </script>
 </div>
       <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
 
