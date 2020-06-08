@@ -14,20 +14,19 @@
 <meta name="author" content="Lvwh">
 
 
-    
-    
 
-
-<meta name="description" content="静水流深">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Lvwh&#39;s Blog">
-<meta property="og:url" content="https://lvwh.github.io/page/2/index.html">
+<meta name="description" content="第一次作业—绝句  二月初一北京初雪  三千雪精灵，半日帝都行。 略施魔法力，北京变北平。   战风寒  周身炽炎炎，鼻中物黏黏。 七尺男子汉，何用双黄连？   第二次作业—律诗  玉渊潭公园赏樱花  枝上樱花一丛丛，四月日暖春意浓。 粉蕊新开饰柳绿，素衣方着映浅红。 几树樱花照水镜，巧借春风弄姿容。 同行皆是世俗客，独得花香润喉咙。">
+<meta name="keywords" content="随笔">
+<meta property="og:type" content="article">
+<meta property="og:title" content="诗词格律作业">
+<meta property="og:url" content="https://lvwh.github.io/2018/06/诗词格律作业汇总/index.html">
 <meta property="og:site_name" content="Lvwh&#39;s Blog">
-<meta property="og:description" content="静水流深">
+<meta property="og:description" content="第一次作业—绝句  二月初一北京初雪  三千雪精灵，半日帝都行。 略施魔法力，北京变北平。   战风寒  周身炽炎炎，鼻中物黏黏。 七尺男子汉，何用双黄连？   第二次作业—律诗  玉渊潭公园赏樱花  枝上樱花一丛丛，四月日暖春意浓。 粉蕊新开饰柳绿，素衣方着映浅红。 几树樱花照水镜，巧借春风弄姿容。 同行皆是世俗客，独得花香润喉咙。">
 <meta property="og:locale" content="zh-Hans">
+<meta property="og:updated_time" content="2020-06-08T07:55:14.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Lvwh&#39;s Blog">
-<meta name="twitter:description" content="静水流深">
+<meta name="twitter:title" content="诗词格律作业">
+<meta name="twitter:description" content="第一次作业—绝句  二月初一北京初雪  三千雪精灵，半日帝都行。 略施魔法力，北京变北平。   战风寒  周身炽炎炎，鼻中物黏黏。 七尺男子汉，何用双黄连？   第二次作业—律诗  玉渊潭公园赏樱花  枝上樱花一丛丛，四月日暖春意浓。 粉蕊新开饰柳绿，素衣方着映浅红。 几树樱花照水镜，巧借春风弄姿容。 同行皆是世俗客，独得花香润喉咙。">
 
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 
@@ -55,13 +54,11 @@
 <link rel="stylesheet" href="/css/style.css">
 
 
-    <style> .article { opacity: 0;} </style>
-
 
 <link href="//cdn.bootcss.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
 
 
-<title>Lvwh&#39;s Blog</title>
+<title>诗词格律作业 | Lvwh&#39;s Blog</title>
 
 <script src="//cdn.bootcss.com/jquery/2.2.4/jquery.min.js"></script>
 <script src="//cdn.bootcss.com/clipboard.js/1.5.10/clipboard.min.js"></script>
@@ -70,8 +67,8 @@
     var yiliaConfig = {
         fancybox: true,
         animate: true,
-        isHome: true,
-        isPost: false,
+        isHome: false,
+        isPost: true,
         isArchive: false,
         isTag: false,
         isCategory: false,
@@ -202,148 +199,7 @@
     </div>
     <link class="menu-list" tags="标签" friends="友情链接" about="关于我">
 </nav>
-      <div class="body-wrap">
-  
-    <article id="post-SQL" class="article article-type-post" itemscope="" itemprop="blogPost">
-  
-    <div class="article-meta">
-      <a href="/2018/10/SQL/" class="article-date">
-      <time datetime="2018-10-16T02:25:28.000Z" itemprop="datePublished">2018-10-16</time>
-</a>
-
-
-    </div>
-  
-  <div class="article-inner">
-    
-      <input type="hidden" class="isFancy">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/10/SQL/">SQL</a>
-    </h1>
-  
-
-      </header>
-      
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-          
-              <h1 id="单表查询"><a class="markdownIt-Anchor" href="#单表查询"></a> 单表查询</h1>
-<h3 id="空值"><a class="markdownIt-Anchor" href="#空值"></a> 空值</h3>
-<p>NULL值不能参与运算，查询时只能通过<code>is(或is not) NULL</code>判断</p>
-<blockquote>
-<p>coalesce函数：<br>
-<code>coalesce(expression_1,expression_2,...)</code> 取得一连串中第一个非NULL值，若所有都是NULL值则返回NULL值<br>
-<code>coalesce(expression_1,expression_2)</code> 若expression_1是NULL值则返回expression_2，否则保持不变</p>
-</blockquote>
-<blockquote>
-<p>nullif函数：<br>
-<code>nullif(expression_1,expression_2)</code> 当expression_1等于expression_2时返回NULL值，否则返回expression_1</p>
-</blockquote>
-          
-      
-    </div>
-    
-    <div class="article-info article-info-index">
-      
-      
-
-      
-    <div class="article-tag tagcloud">
-        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/计算机/">计算机</a></li></ul>
-    </div>
-
-      
-        <p class="article-more-link">
-          <a href="/2018/10/SQL/#more">阅读全文 >></a>
-        </p>
-      
-      <div class="clearfix"></div>
-    </div>
-    
-  </div>
-  
-</article>
-
-
-
-
-
-
-
-
-
-  
-    <article id="post-12天留给济豫，我们一起长大" class="article article-type-post" itemscope="" itemprop="blogPost">
-  
-    <div class="article-meta">
-      <a href="/2018/08/12天留给济豫，我们一起长大/" class="article-date">
-      <time datetime="2018-08-05T13:16:36.000Z" itemprop="datePublished">2018-08-05</time>
-</a>
-
-
-    </div>
-  
-  <div class="article-inner">
-    
-      <input type="hidden" class="isFancy">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/08/12天留给济豫，我们一起长大/">12天留给济豫，我们一起长大</a>
-    </h1>
-  
-
-      </header>
-      
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-          
-              <p>题记：这是我第二次暑期实践，第一次短期支教，总结这十二天的经历有太多话想说，这篇支教感想算是给这段回忆一个交代，希望以后的以后自己再读起来还能记得曾经的美好。</p>
-          
-      
-    </div>
-    
-    <div class="article-info article-info-index">
-      
-      
-
-      
-    <div class="article-tag tagcloud">
-        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/随笔/">随笔</a></li></ul>
-    </div>
-
-      
-        <p class="article-more-link">
-          <a href="/2018/08/12天留给济豫，我们一起长大/#more">阅读全文 >></a>
-        </p>
-      
-      <div class="clearfix"></div>
-    </div>
-    
-  </div>
-  
-</article>
-
-
-
-
-
-
-
-
-
-  
-    <article id="post-诗词格律作业汇总" class="article article-type-post" itemscope="" itemprop="blogPost">
+      <div class="body-wrap"><article id="post-诗词格律作业汇总" class="article article-type-post" itemscope="" itemprop="blogPost">
   
     <div class="article-meta">
       <a href="/2018/06/诗词格律作业汇总/" class="article-date">
@@ -361,18 +217,29 @@
       <header class="article-header">
         
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/06/诗词格律作业汇总/">诗词格律作业</a>
+    <h1 class="article-title" itemprop="name">
+      诗词格律作业
     </h1>
   
 
       </header>
       
+      <div class="article-info article-info-post">
+        
+
+        
+    <div class="article-tag tagcloud">
+        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/随笔/">随笔</a></li></ul>
+    </div>
+
+        <div class="clearfix"></div>
+      </div>
+      
     
     <div class="article-entry" itemprop="articleBody">
       
           
-              <h2 id="第一次作业绝句"><a class="markdownIt-Anchor" href="#第一次作业绝句"></a> 第一次作业—绝句</h2>
+        <h2 id="第一次作业绝句"><a class="markdownIt-Anchor" href="#第一次作业绝句"></a> 第一次作业—绝句</h2>
 <h3 id="二月初一北京初雪"><a class="markdownIt-Anchor" href="#二月初一北京初雪"></a> 二月初一北京初雪</h3>
 <center>
 三千雪精灵，半日帝都行。
@@ -391,118 +258,132 @@
 <p>几树樱花照水镜，巧借春风弄姿容。</p>
 <p>同行皆是世俗客，独得花香润喉咙。</p>
 </center>
-          
+<a id="more"></a>
+<h2 id="第三次作业古风"><a class="markdownIt-Anchor" href="#第三次作业古风"></a> 第三次作业—古风</h2>
+<h3 id="回忆军训"><a class="markdownIt-Anchor" href="#回忆军训"></a> 回忆军训</h3>
+<center>
+辰时初抵练兵场，三千学子志高涨。
+<p>铺头行李未放定，集合哨声先吹响。</p>
+<p>军姿首当第一关，立定半晌腰腿酸。</p>
+<p>连队口号放声喊，汗湿军装战伏天。</p>
+<p>十里山路跑拉练，营连队伍成行线。</p>
+<p>军旗引领蜿蜒路，一入密林看不见。</p>
+<p>基础动作扎稳底，科目带开攻困难。</p>
+<p>抡摔绊腿刺杀式，擒拿刺杀军体拳。</p>
+<p>军营成长虽短暂，师大学子立典范。</p>
+<p>谁言年少多怠惰，书生亦是男子汉。</p>
+</center>
+<h2 id="第四次作业词"><a class="markdownIt-Anchor" href="#第四次作业词"></a> 第四次作业—词</h2>
+<h3 id="沁园春长跑"><a class="markdownIt-Anchor" href="#沁园春长跑"></a> 沁园春.长跑</h3>
+<center>
+跑者英姿，腿上发力，脚下生风。
+<p>感涔涔落汗，炎炎烈日，吸氧呼气，鼻嘴皆通。</p>
+<p>十里征途，尽头不见，唯以坚韧向前冲。</p>
+<p>待冲刺，竭洪荒之力，疾步开弓。</p>
+<p>高人从来无争，存攻坚胜己于心中。</p>
+<p>品跑者天性，迎难而进，领跑盛夏，追赶寒冬。</p>
+<p>一路孑孑，从来孤独，相伴无言耳畔风。</p>
+<p>看脚下，跑漫漫长路，亦是人生。</p>
+</center>
       
-    </div>
-    
-    <div class="article-info article-info-index">
-      
-      
-
-      
-    <div class="article-tag tagcloud">
-        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/随笔/">随笔</a></li></ul>
-    </div>
-
-      
-        <p class="article-more-link">
-          <a href="/2018/06/诗词格律作业汇总/#more">阅读全文 >></a>
-        </p>
-      
-      <div class="clearfix"></div>
     </div>
     
   </div>
   
-</article>
-
-
-
-
-
-
-
-
-
-  
-    <article id="post-Hexo设置" class="article article-type-post" itemscope="" itemprop="blogPost">
-  
-    <div class="article-meta">
-      <a href="/2018/02/Hexo设置/" class="article-date">
-      <time datetime="2018-02-09T13:05:04.000Z" itemprop="datePublished">2018-02-09</time>
-</a>
-
-
+    
+    <div class="copyright">
+        <p><span>本文标题:</span><a href="/2018/06/诗词格律作业汇总/">诗词格律作业</a></p>
+        <p><span>文章作者:</span><a href="/" title="回到主页">Lvwh</a></p>
+        <p><span>发布时间:</span>2018-06-12, 20:55:37</p>
+        <p><span>最后更新:</span>2020-06-08, 15:55:14</p>
+        <p>
+            <span>原始链接:</span><a class="post-url" href="/2018/06/诗词格律作业汇总/" title="诗词格律作业">https://lvwh.github.io/2018/06/诗词格律作业汇总/</a>
+            <span class="copy-path" data-clipboard-text="原文: https://lvwh.github.io/2018/06/诗词格律作业汇总/　　作者: Lvwh" title="点击复制文章链接"><i class="fa fa-clipboard"></i></span>
+            <script> var clipboard = new Clipboard('.copy-path'); </script>
+        </p>
+        <p>
+            <span>许可协议:</span><i class="fa fa-creative-commons"></i> <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" title="CC BY-NC-SA 4.0 International" target="_blank">"署名-非商用-相同方式共享 4.0"</a> 转载请保留原文链接及作者。
+        </p>
     </div>
-  
-  <div class="article-inner">
-    
-      <input type="hidden" class="isFancy">
-    
-    
-      <header class="article-header">
+
+
+
+    <nav id="article-nav">
         
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/02/Hexo设置/">Hexo设置</a>
-    </h1>
-  
+            <div id="article-nav-newer" class="article-nav-title">
+                <a href="/2018/08/12天留给济豫，我们一起长大/">
+                    12天留给济豫，我们一起长大
+                </a>
+            </div>
+        
+        
+            <div id="article-nav-older" class="article-nav-title">
+                <a href="/2018/02/Hexo设置/">
+                    Hexo设置
+                </a>
+            </div>
+        
+    </nav>
 
-      </header>
-      
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-          
-              <h2 id="渲染latex公式"><a class="markdownIt-Anchor" href="#渲染latex公式"></a> 渲染LaTeX公式</h2>
-<h3 id="1-卸载marked渲染器安装markdown-it-plus渲染器"><a class="markdownIt-Anchor" href="#1-卸载marked渲染器安装markdown-it-plus渲染器"></a> 1、卸载marked渲染器，安装markdown it plus渲染器</h3>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">npm uninstall hexo-render-marked --save</span><br><span class="line">npm install hexo-renderer-markdown-it-plus --save</span><br></pre></td></tr></table></figure>
-<h3 id="2-配置_configyml文件"><a class="markdownIt-Anchor" href="#2-配置_configyml文件"></a> 2、配置<code>_config.yml</code>文件</h3>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">markdown_it_plus:</span><br><span class="line">  highlight: true</span><br><span class="line">  html: true</span><br><span class="line">  xhtmlOut: true</span><br><span class="line">  breaks: true</span><br><span class="line">  langPrefix:</span><br><span class="line">  linkify: true</span><br><span class="line">  typographer:</span><br><span class="line">  quotes: “”‘’</span><br><span class="line">  plugins:</span><br><span class="line">    - plugin:</span><br><span class="line">        name: markdown-it-katex</span><br><span class="line">        enable: true</span><br><span class="line">    - plugin:</span><br><span class="line">        name: markdown-it-mark</span><br><span class="line">        enable: false</span><br></pre></td></tr></table></figure>
-<h3 id="3-在head中加载katex的css样式"><a class="markdownIt-Anchor" href="#3-在head中加载katex的css样式"></a> 3、在<code>head</code>中加载Katex的CSS样式</h3>
-<p>在<code>/themes/所选主题/layout/_partial/head.ejs</code>中写入</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;link href=&quot;https://cdn.bootcss.com/KaTeX/0.7.1/katex.min.css&quot; rel=&quot;stylesheet&quot;&gt;</span><br></pre></td></tr></table></figure>
-<h3 id="4-遇到报错cannot-find-module-markdown-it-katex"><a class="markdownIt-Anchor" href="#4-遇到报错cannot-find-module-markdown-it-katex"></a> 4、遇到报错<code>Cannot find module 'markdown-it-katex'</code></h3>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install markdown-it-katex --save</span><br></pre></td></tr></table></figure>
-          
-      
-    </div>
-    
-    <div class="article-info article-info-index">
-      
-      
-
-      
-    <div class="article-tag tagcloud">
-        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Hexo/">Hexo</a></li></ul>
-    </div>
-
-      
-        <p class="article-more-link">
-          <a href="/2018/02/Hexo设置/#more">阅读全文 >></a>
-        </p>
-      
-      <div class="clearfix"></div>
-    </div>
-    
-  </div>
   
 </article>
 
+    <div id="toc" class="toc-article">
+        <strong class="toc-title">文章目录</strong>
+        
+            <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#第一次作业绝句"><span class="toc-number">1.</span> <span class="toc-text"> 第一次作业—绝句</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#二月初一北京初雪"><span class="toc-number">1.1.</span> <span class="toc-text"> 二月初一北京初雪</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#战风寒"><span class="toc-number">1.2.</span> <span class="toc-text"> 战风寒</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#第二次作业律诗"><span class="toc-number">2.</span> <span class="toc-text"> 第二次作业—律诗</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#玉渊潭公园赏樱花"><span class="toc-number">2.1.</span> <span class="toc-text"> 玉渊潭公园赏樱花</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#第三次作业古风"><span class="toc-number">3.</span> <span class="toc-text"> 第三次作业—古风</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#回忆军训"><span class="toc-number">3.1.</span> <span class="toc-text"> 回忆军训</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#第四次作业词"><span class="toc-number">4.</span> <span class="toc-text"> 第四次作业—词</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#沁园春长跑"><span class="toc-number">4.1.</span> <span class="toc-text"> 沁园春.长跑</span></a></li></ol></li></ol>
+        
+    </div>
+    <style>
+        .left-col .switch-btn,
+        .left-col .switch-area {
+            display: none;
+        }
+        .toc-level-6 i,
+        .toc-level-6 ol {
+            display: none !important;
+        }
+    </style>
+
+    <input type="button" id="tocButton" value="隐藏目录" title="点击按钮隐藏或者显示文章目录">
+
+    <script>
+        yiliaConfig.toc = ["隐藏目录", "显示目录", !!"false"];
+    </script>
 
 
 
 
 
+    
 
 
 
-  
-  
-    <nav id="page-nav">
-      <a class="extend prev" rel="prev" href="/">&laquo; Prev</a><a class="page-number" href="/">1</a><span class="page-number current">2</span>
-    </nav>
-  
+
+    <div class="scroll" id="post-nav-button">
+        
+            <a href="/2018/08/12天留给济豫，我们一起长大/" title="上一篇: 12天留给济豫，我们一起长大">
+                <i class="fa fa-angle-left"></i>
+            </a>
+        
+
+        <a title="文章列表"><i class="fa fa-bars"></i><i class="fa fa-times"></i></a>
+
+        
+            <a href="/2018/02/Hexo设置/" title="下一篇: Hexo设置">
+                <i class="fa fa-angle-right"></i>
+            </a>
+        
+    </div>
+
+    <ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2020/05/有用的网址/">有用的网址</a></li><li class="post-list-item"><a class="post-list-link" href="/2020/04/Latex相关/">妙用Latex</a></li><li class="post-list-item"><a class="post-list-link" href="/2020/01/Python/">Python</a></li><li class="post-list-item"><a class="post-list-link" href="/2019/09/Vue/">Vue</a></li><li class="post-list-item"><a class="post-list-link" href="/2019/07/正则表达式/">正则表达式</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/10/SQL/">SQL</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/08/12天留给济豫，我们一起长大/">12天留给济豫，我们一起长大</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/06/诗词格律作业汇总/">诗词格律作业</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/02/Hexo设置/">Hexo设置</a></li></ul>
+
+
+
+
+    <script>
+        
+    </script>
 </div>
       <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
 
