@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[微信公众号]]></title>
+    <url>%2Fposts%2Ff66864f1.html</url>
+    <content type="text"><![CDATA[公众号封面提取 浏览器打开推送文章的链接，前端代码中var msg_cdn_url指向的就是封面图片]]></content>
+  </entry>
+  <entry>
     <title><![CDATA[有用的网址]]></title>
     <url>%2Fposts%2F43405.html</url>
     <content type="text"><![CDATA[bilibili视频下载 https://www.xbeibeix.com/api/bilibili/ 支持下载mp4和flv格式，画质最高到非会员可观看的最高画质]]></content>
